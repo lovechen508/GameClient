@@ -132,11 +132,11 @@ void load(YCIModule* module)
 
 	if (module->status() == YCIModule::INITED)
 	{
-		module->preload();
+		//module->preload();
 
 		module->load();
 
-		module->postload();
+		//module->postload();
 	}
 }
 
@@ -156,11 +156,11 @@ void YCModuleManager::unload(YCIModule* module)
 
 	if (module->status() == YCIModule::ACTIVE)
 	{
-		module->preunload();
+		//module->preunload();
 
 		module->unload();
 
-		module->postunload();
+		//module->postunload();
 	}
 }
 
@@ -180,13 +180,13 @@ void YCModuleManager::reload(YCIModule* module)
 
 	if (module->status() == YCIModule::ACTIVE)
 	{
-		module->preunload();
+		//module->preunload();
 		module->unload();
-		module->postunload();
+		//module->postunload();
 
-		module->preload();
+		//module->preload();
 		module->load();
-		module->postload();
+		//module->postload();
 	}
 }
 
