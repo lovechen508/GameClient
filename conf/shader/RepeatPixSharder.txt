@@ -1,0 +1,16 @@
+texture MyTexture;
+
+sampler MySampler = 
+sampler_state 
+{ 
+	Texture = <MyTexture>;
+	MinFilter = Linear;
+	MagFilter = Linear;
+	AddressU = Clamp;
+	AddressV = Clamp;
+};
+
+float4 TextureLookupPS( float2 vTexCoord : TEXCOORD0 ) : COLOR
+{
+	return tex2D( MySampler, vTexCoord );
+}

@@ -1,0 +1,54 @@
+//
+// File: ps_repeattex.txt
+//
+
+// Desc: Pixel shader that does part of texture repeating.
+//
+
+//
+// Globals
+//
+
+int globalWidth;
+int globalHeight;
+
+int width;
+int height;
+
+texture MyTexture;
+
+//
+// Structures
+//
+sampler MySampler = 
+sampler_state 
+{ 
+	Texture = (MyTexture);
+	MinFilter = Linear;
+	MagFilter = Linear;
+	AddressU = Clamp;
+	AddressV = Clamp;
+};
+
+struct PS_INPUT
+{
+     float4 Position   : TEXCOORD0;
+};
+
+struct PS_OUTPUT
+{
+     vector finalPixelColor : COLOR0;
+};
+
+//
+// Main
+//
+PS_OUTPUT Main(PS_INPUT input) : COLOR0
+{	 
+     // zero out members of output
+     PS_OUTPUT output = (PS_OUTPUT)0;
+	 
+	 output.finalPixelColor = tex2D(MySampler, input.Position);
+	 
+     return output;
+}

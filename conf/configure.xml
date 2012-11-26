@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configure>
+	<!--
+		配置描述：configure.xml
+		          客户端唯一配置文件
+				  必须放在data\conf目录下面
+	-->
+	<window>
+		<width>1024</width>
+		<height>768</height>
+		<fps>30</fps>
+	</window>
+	<!--
+		网络配置：登录服务器IP，Port等
+	-->
+	<network>
+		<host>127.0.0.1</host>
+		<port>3454</port>
+	</network>
+	
+	<!--
+		远程纹理下载服务器：
+				url               纹理服务器地址
+				noOfConnection    并发最大连接数
+				maxItemsInQueue   纹理请求等待队列
+				
+		全局资源目录配置： 
+					
+				类别			默认路径
+				大地表			data\map
+				共享地表		data\map\shared
+				Obstacle       	data\object\obstacle
+				NPC				data\object\npc
+				Player			data\object\player
+				Monster         data\object\monster
+				Effect			data\effect
+				UI              data\ui
+				Sound			data\sound
+	-->
+	<texture>
+		
+		<durationSeconds>60</durationSeconds>
+		
+		<network>
+			<url>http://localhost:8080/textures/</url>
+			<noOfConnections>3</noOfConnections>
+			<maxItemsInQueue>10</maxItemsInQueue>
+		</network>
+		
+		<data>
+			<dir no="1" type="TiledMap"  path="data\map" />
+			<dir no="2" type="SharedMap" path="data\map\shared" />
+			<dir no="3" type="Obstacle"  path="data\object\obstacle" />
+			<dir no="4" type="NPC"       path="data\object\npc" />
+			<dir no="5" type="Player"    path="data\object\player" />
+			<dir no="6" type="Monster"   path="data\object\monster" />
+			<dir no="7" type="Effect"    path="data\effect" />
+			<dir no="8" type="UI"        path="data\ui" />
+		</data>
+		
+	</texture>
+	
+	<!--
+		日志级别配置：TRACE > DEBUG >　INFO > WARNING > ERROR > FATAL
+		
+				级别	  值		描述
+				TRACE      1
+				DEBUG      2
+				INFO       3
+				WARNING    4
+				ERROR      5
+				FATAL      6
+	-->
+	<log level="5" />
+	
+	<!--
+		UI Tag 定义：
+	-->
+	<ui>
+		<core>data\ui\core</core>
+	</ui>
+	
+	<!--
+		 技能
+	-->
+	<magic>
+		<file>data\conf\magic.cfg</file>
+	</magic>
+	
+	<!--
+		聊天
+	-->
+	<chat>
+		<storage>conf\chat.cfg</storage>
+		<color>
+			<channel name="light">0xFFFFFF</channel>
+			<channel name="private">0xFFFFFF</channel>
+			<channel name="friend">0xFFFFFF</channel>
+			<channel name="team">0xFFFFFF</channel>
+			<channel name="family">0xFFFFFF</channel>
+			<channel name="country">0xFFFFFF</channel>
+			<channel name="world">0xFFFFFF</channel>
+			<channel name="system">0xFFFFFF</channel>
+			<channel name="global">0xFFFFFF</channel>
+		</color>
+	</chat>
+	
+	<!--
+		Buff
+	-->
+	<buff>data\conf\chat.cfg</buff>
+	
+	<!--
+		模块配置：游戏主功能都通过模块方式加载，模块间采用依赖声明递归加载
+		
+		    属性名      描述
+			Name  		模块名称
+			Version		模块版本
+			State		状态0,1
+			
+		模块打包名称：Name_Version.zip
+	-->
+	<modules>
+		<module name="main" version="1.0" state="1" />
+		<module name="map1" version="1.0" state="1" />
+	</modules>
+	
+</configure>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Distribute|Win32">
+      <Configuration>Debug_Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Distribute|Win32">
+      <Configuration>Release_Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{063D9A34-149D-453E-AA2E-644158BFC93F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>YCGame</RootNamespace>
+    <ProjectName>YC_Game</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rd\directx\9.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\debug\YC_Config.lib;..\debug\YC_Network.lib;..\debug\YC_Graphic.lib;..\debug\YC_Basic.lib;..\debug\YC_Lua.lib;..\debug\YC_Input.lib;..\3rd\directx\9.0\lib\*;..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>rem mkdir ..\..\Distribute\debug\include\YCGame
+rem copy YC*.h ..\..\Distribute\debug\include\YCGame
+rem copy ..\debug\YC_Game.lib ..\..\Distribute\debug\lib
+rem copy ..\debug\YC_Game.dll ..\..\Distribute\debug\bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rd\directx\9.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\debug\YC_Config.lib;..\debug\YC_Network.lib;..\debug\YC_Graphic.lib;..\debug\YC_Basic.lib;..\debug\YC_Lua.lib;..\debug\YC_Input.lib;..\3rd\directx\9.0\lib\*;..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\Distribute\debug\include\YCGame
+copy YC*.h ..\..\Distribute\debug\include\YCGame
+copy ..\debug\YC_Game.lib ..\..\Distribute\debug\lib
+copy ..\debug\YC_Game.dll ..\..\Distribute\debug\bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rd\directx\9.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\bin\YC_Config.lib;..\bin\YC_Network.lib;..\bin\YC_Graphic.lib;..\bin\YC_Basic.lib;..\bin\YC_Lua.lib;..\bin\YC_Input.lib;..\3rd\directx\9.0\lib\*;..\3rd\gperftools\2.0\libtcmalloc_minimal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>rem mkdir ..\..\Distribute\release\include\YCGame
+rem copy YC*.h ..\..\Distribute\release\include\YCGame
+rem copy ..\bin\YC_Game.lib ..\..\Distribute\release\lib
+rem copy ..\bin\YC_Game.dll ..\..\Distribute\release\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\3rd\directx\9.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\bin\YC_Config.lib;..\bin\YC_Network.lib;..\bin\YC_Graphic.lib;..\bin\YC_Basic.lib;..\bin\YC_Lua.lib;..\bin\YC_Input.lib;..\3rd\directx\9.0\lib\*;..\3rd\gperftools\2.0\libtcmalloc_minimal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\Distribute\release\include\YCGame
+copy YC*.h ..\..\Distribute\release\include\YCGame
+copy ..\bin\YC_Game.lib ..\..\Distribute\release\lib
+copy ..\bin\YC_Game.dll ..\..\Distribute\release\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="YCBlackFilter.cpp" />
+    <ClCompile Include="YCBuff.cpp" />
+    <ClCompile Include="YCBuffBuilder.cpp" />
+    <ClCompile Include="YCBuffManager.cpp" />
+    <ClCompile Include="YCChannelFilter.cpp" />
+    <ClCompile Include="YCChatManager.cpp" />
+    <ClCompile Include="YCAvatarController.cpp" />
+    <ClCompile Include="YCChatMessage.cpp" />
+    <ClCompile Include="YCCreature.cpp" />
+    <ClCompile Include="YCGame.cpp" />
+    <ClCompile Include="YCGameStage.cpp" />
+    <ClCompile Include="YCHttpModuleLoader.cpp" />
+    <ClCompile Include="YCIChatFilter.cpp" />
+    <ClCompile Include="YCChatParser.cpp" />
+    <ClCompile Include="YCIChatInterceptor.cpp" />
+    <ClCompile Include="YCIGameStage.cpp" />
+    <ClCompile Include="YCImageUnit.cpp" />
+    <ClCompile Include="YCIMessageUnit.cpp" />
+    <ClCompile Include="YCIModule.cpp" />
+    <ClCompile Include="YCIModuleLoader.cpp" />
+    <ClCompile Include="YCIPackage.cpp" />
+    <ClCompile Include="YCItem.cpp" />
+    <ClCompile Include="YCItemBuilder.cpp" />
+    <ClCompile Include="YCLoginStage.cpp" />
+    <ClCompile Include="YCMagic.cpp" />
+    <ClCompile Include="YCMagicBuilder.cpp" />
+    <ClCompile Include="YCMagicEffect.cpp" />
+    <ClCompile Include="YCMagicMeta.cpp" />
+    <ClCompile Include="YCMagicMetaBuilder.cpp" />
+    <ClCompile Include="YCMagicMetaManager.cpp" />
+    <ClCompile Include="YCMagicTree.cpp" />
+    <ClCompile Include="YCMainPlayer.cpp" />
+    <ClCompile Include="YCMapBuilder.cpp" />
+    <ClCompile Include="YCMapFactory.cpp" />
+    <ClCompile Include="YCMapObject.cpp" />
+    <ClCompile Include="YCModuleManager.cpp" />
+    <ClCompile Include="YCMonster.cpp" />
+    <ClCompile Include="YCNpc.cpp" />
+    <ClCompile Include="YCPackage.cpp" />
+    <ClCompile Include="YCPlayer.cpp" />
+    <ClCompile Include="YCSelectRoleStage.cpp" />
+    <ClCompile Include="YCTaskManager.cpp" />
+    <ClCompile Include="YCTaskMessage.cpp" />
+    <ClCompile Include="YCTaskParser.cpp" />
+    <ClCompile Include="YCTextUnit.cpp" />
+    <ClCompile Include="YCTiledLayer.cpp" />
+    <ClCompile Include="YCTiledMap.cpp" />
+    <ClCompile Include="YCTiledMapTile.cpp" />
+    <ClCompile Include="YCTiledTexture.cpp" />
+    <ClCompile Include="YCTileSet.cpp" />
+    <ClCompile Include="YCZipModule.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="YCBlackFilter.h" />
+    <ClInclude Include="YCBuff.h" />
+    <ClInclude Include="YCBuffBuilder.h" />
+    <ClInclude Include="YCBuffManager.h" />
+    <ClInclude Include="YCBuffMeta.h" />
+    <ClInclude Include="YCChannelFilter.h" />
+    <ClInclude Include="YCChatManager.h" />
+    <ClInclude Include="YCAvatarController.h" />
+    <ClInclude Include="YCChatMessage.h" />
+    <ClInclude Include="YCChatMsgDefine.h" />
+    <ClInclude Include="YCCreature.h" />
+    <ClInclude Include="YCGame.h" />
+    <ClInclude Include="YCGameStage.h" />
+    <ClInclude Include="YCGameStageDefine.h" />
+    <ClInclude Include="YCHttpModuleLoader.h" />
+    <ClInclude Include="YCIChatFilter.h" />
+    <ClInclude Include="YCChatParser.h" />
+    <ClInclude Include="YCIChatInterceptor.h" />
+    <ClInclude Include="YCIGameStage.h" />
+    <ClInclude Include="YCImageUnit.h" />
+    <ClInclude Include="YCIUnitAction.h" />
+    <ClInclude Include="YCIMessageUnit.h" />
+    <ClInclude Include="YCIModule.h" />
+    <ClInclude Include="YCIModuleLoader.h" />
+    <ClInclude Include="YCIPackage.h" />
+    <ClInclude Include="YCItem.h" />
+    <ClInclude Include="YCItemBuilder.h" />
+    <ClInclude Include="YCLoginStage.h" />
+    <ClInclude Include="YCMagic.h" />
+    <ClInclude Include="YCMagicBuilder.h" />
+    <ClInclude Include="YCMagicEffect.h" />
+    <ClInclude Include="YCMagicMeta.h" />
+    <ClInclude Include="YCMagicMetaBuilder.h" />
+    <ClInclude Include="YCMagicMetaManager.h" />
+    <ClInclude Include="YCMagicTree.h" />
+    <ClInclude Include="YCMainPlayer.h" />
+    <ClInclude Include="YCMapBuilder.h" />
+    <ClInclude Include="YCMapFactory.h" />
+    <ClInclude Include="YCMapObject.h" />
+    <ClInclude Include="YCModuleManager.h" />
+    <ClInclude Include="YCMonster.h" />
+    <ClInclude Include="YCNpc.h" />
+    <ClInclude Include="YCObjectDef.h" />
+    <ClInclude Include="YCPackage.h" />
+    <ClInclude Include="YCPlayer.h" />
+    <ClInclude Include="YCSelectRoleStage.h" />
+    <ClInclude Include="YCTaskDefine.h" />
+    <ClInclude Include="YCTaskManager.h" />
+    <ClInclude Include="YCTaskMessage.h" />
+    <ClInclude Include="YCTaskParser.h" />
+    <ClInclude Include="YCTextUnit.h" />
+    <ClInclude Include="YCTiledLayer.h" />
+    <ClInclude Include="YCTiledMap.h" />
+    <ClInclude Include="YCTiledMapTile.h" />
+    <ClInclude Include="YCTiledTexture.h" />
+    <ClInclude Include="YCTileSet.h" />
+    <ClInclude Include="YCZipModule.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

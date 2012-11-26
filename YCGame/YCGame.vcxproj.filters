@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Module">
+      <UniqueIdentifier>{086d820f-2032-4f92-8bcd-08152cd90f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Module">
+      <UniqueIdentifier>{e7aac107-5258-4b14-8353-e801fd9272a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model">
+      <UniqueIdentifier>{39e86bad-d06a-430e-b98b-f4d51c68394c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model">
+      <UniqueIdentifier>{58fee772-15a6-4c3e-91fa-633e5544c543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Map">
+      <UniqueIdentifier>{15faf2be-b2f3-4af8-a3ed-2fdadbae005d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Map">
+      <UniqueIdentifier>{4575758e-80a0-4468-9958-273ee3b018b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\object">
+      <UniqueIdentifier>{c90d7537-5456-48f1-9247-474ac1b9b3dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\object">
+      <UniqueIdentifier>{a7c2f37b-f9c7-4b41-b448-b1b83cce4ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Map\Tiled">
+      <UniqueIdentifier>{fcdb441b-d68c-4291-ad21-3235fb3413d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Map\Tiled">
+      <UniqueIdentifier>{e12dc6ef-2d9c-4068-a8b2-a1c6043a6620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Controller">
+      <UniqueIdentifier>{4d6b7549-4ca7-4a95-ae70-5aac2434c025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Controller">
+      <UniqueIdentifier>{a80af6a4-e4f3-44e6-972e-27e8ea736d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Package">
+      <UniqueIdentifier>{afd2f333-d2ac-4196-b707-0adf00314a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Package">
+      <UniqueIdentifier>{9b3ce1fe-c374-4cf6-8ac8-d1a5a6932c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\object\Def">
+      <UniqueIdentifier>{816edf95-41b9-49a3-8339-67a4a44d0993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Magic">
+      <UniqueIdentifier>{4b669a8d-8c59-48f6-b1fb-6d688920ed0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Magic\Meta">
+      <UniqueIdentifier>{d089ec3d-9b69-4bca-b1df-abae245202aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Magic">
+      <UniqueIdentifier>{d1b68099-6918-444c-8807-24d653f389c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Magic\Meta">
+      <UniqueIdentifier>{a74af4eb-0950-41d1-a981-770c2d957640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Chat">
+      <UniqueIdentifier>{7c5e6e94-0ded-42b8-8bed-07b865ae5646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Chat">
+      <UniqueIdentifier>{7a390bc0-f38b-42ba-9f33-34e90fe28397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Chat\Filter">
+      <UniqueIdentifier>{d13018ac-6454-499d-9c0a-99c64d5d97cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Chat\Filter">
+      <UniqueIdentifier>{5fed186f-70f0-4442-8617-4a39e76fb853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Chat\Parser">
+      <UniqueIdentifier>{4c87965e-e8d1-4601-9e46-f24ed75151ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Chat\Parser">
+      <UniqueIdentifier>{f0f23eac-2269-415b-b722-762688781d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Chat\Message">
+      <UniqueIdentifier>{37af886c-c4c1-4646-aa82-a0cd6e8c629e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Chat\Message">
+      <UniqueIdentifier>{bcb5b84c-db85-4e2a-a675-8b1460792102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Chat\Def">
+      <UniqueIdentifier>{ac80e1ea-9704-4757-a9fa-d0e8492abd86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Stage">
+      <UniqueIdentifier>{fa17155d-9748-4773-86bc-1f08d4ac646e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Stage">
+      <UniqueIdentifier>{96eaf1ed-36dc-4c1c-8a04-270b4be0e736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Stage\Def">
+      <UniqueIdentifier>{982eaa4c-4dc0-4ea2-b5f5-e0e2ee0a49ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Task">
+      <UniqueIdentifier>{e42c0f39-f46f-4045-b88b-5a9544b89db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Task">
+      <UniqueIdentifier>{66763b95-f538-4397-a66d-1c2d2278414b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Message">
+      <UniqueIdentifier>{ec2ece33-7dce-4e31-bfdb-f513e22d33a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Message">
+      <UniqueIdentifier>{ef7ec3c1-63b8-46ec-83ea-c4fbfcaf6088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Task\Parser">
+      <UniqueIdentifier>{e9b5112c-7e67-4db7-9a74-a1c4ad14b185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Task\Parser">
+      <UniqueIdentifier>{7cdb3e18-415d-4bfb-b552-6dc7ac4ec7d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model\Buff">
+      <UniqueIdentifier>{e0de28fd-8044-4378-b880-da258741693c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Buff">
+      <UniqueIdentifier>{1d5c80ee-b3dd-4681-9bd5-4faa117ba03e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="YCGame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIModule.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="YCZipModule.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIModuleLoader.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="YCHttpModuleLoader.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="YCModuleManager.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="YCAvatarController.cpp">
+      <Filter>源文件\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMapBuilder.cpp">
+      <Filter>源文件\Model\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMapFactory.cpp">
+      <Filter>源文件\Model\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTiledMapTile.cpp">
+      <Filter>源文件\Model\Map\Tiled</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTiledMap.cpp">
+      <Filter>源文件\Model\Map\Tiled</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTileSet.cpp">
+      <Filter>源文件\Model\Map\Tiled</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTiledLayer.cpp">
+      <Filter>源文件\Model\Map\Tiled</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMapObject.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCCreature.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMagicEffect.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCPlayer.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMonster.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCNpc.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMainPlayer.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCItem.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTiledTexture.cpp">
+      <Filter>源文件\Model\Map\Tiled</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIPackage.cpp">
+      <Filter>源文件\Model\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMagic.cpp">
+      <Filter>源文件\Model\object</Filter>
+    </ClCompile>
+    <ClCompile Include="YCPackage.cpp">
+      <Filter>源文件\Model\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="YCItemBuilder.cpp">
+      <Filter>源文件\Model\Package</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMagicBuilder.cpp">
+      <Filter>源文件\Model\Magic</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMagicTree.cpp">
+      <Filter>源文件\Model\Magic</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMagicMeta.cpp">
+      <Filter>源文件\Model\Magic\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMagicMetaBuilder.cpp">
+      <Filter>源文件\Model\Magic\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMagicMetaManager.cpp">
+      <Filter>源文件\Model\Magic\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="YCChatManager.cpp">
+      <Filter>源文件\Model\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIChatFilter.cpp">
+      <Filter>源文件\Model\Chat\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="YCChannelFilter.cpp">
+      <Filter>源文件\Model\Chat\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="YCBlackFilter.cpp">
+      <Filter>源文件\Model\Chat\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="YCChatParser.cpp">
+      <Filter>源文件\Model\Chat\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIChatInterceptor.cpp">
+      <Filter>源文件\Model\Chat\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="YCChatMessage.cpp">
+      <Filter>源文件\Model\Chat\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIGameStage.cpp">
+      <Filter>源文件\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="YCGameStage.cpp">
+      <Filter>源文件\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSelectRoleStage.cpp">
+      <Filter>源文件\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="YCLoginStage.cpp">
+      <Filter>源文件\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTaskManager.cpp">
+      <Filter>源文件\Model\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIMessageUnit.cpp">
+      <Filter>源文件\Model\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTextUnit.cpp">
+      <Filter>源文件\Model\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="YCImageUnit.cpp">
+      <Filter>源文件\Model\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTaskParser.cpp">
+      <Filter>源文件\Model\Task\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTaskMessage.cpp">
+      <Filter>源文件\Model\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="YCBuff.cpp">
+      <Filter>源文件\Model\Buff</Filter>
+    </ClCompile>
+    <ClCompile Include="YCBuffBuilder.cpp">
+      <Filter>源文件\Model\Buff</Filter>
+    </ClCompile>
+    <ClCompile Include="YCBuffManager.cpp">
+      <Filter>源文件\Model\Buff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="YCGame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="YCModuleManager.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIModuleLoader.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="YCHttpModuleLoader.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIModule.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="YCZipModule.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAvatarController.h">
+      <Filter>头文件\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMapBuilder.h">
+      <Filter>头文件\Model\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMapFactory.h">
+      <Filter>头文件\Model\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTiledMap.h">
+      <Filter>头文件\Model\Map\Tiled</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTiledMapTile.h">
+      <Filter>头文件\Model\Map\Tiled</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTileSet.h">
+      <Filter>头文件\Model\Map\Tiled</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTiledLayer.h">
+      <Filter>头文件\Model\Map\Tiled</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMapObject.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCCreature.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMagicEffect.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCPlayer.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMonster.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCNpc.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMainPlayer.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCItem.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTiledTexture.h">
+      <Filter>头文件\Model\Map\Tiled</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIPackage.h">
+      <Filter>头文件\Model\Package</Filter>
+    </ClInclude>
+    <ClInclude Include="YCObjectDef.h">
+      <Filter>头文件\Model\object\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMagic.h">
+      <Filter>头文件\Model\object</Filter>
+    </ClInclude>
+    <ClInclude Include="YCPackage.h">
+      <Filter>头文件\Model\Package</Filter>
+    </ClInclude>
+    <ClInclude Include="YCItemBuilder.h">
+      <Filter>头文件\Model\Package</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMagicBuilder.h">
+      <Filter>头文件\Model\Magic</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMagicTree.h">
+      <Filter>头文件\Model\Magic</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMagicMeta.h">
+      <Filter>头文件\Model\Magic\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMagicMetaBuilder.h">
+      <Filter>头文件\Model\Magic\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMagicMetaManager.h">
+      <Filter>头文件\Model\Magic\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="YCChatManager.h">
+      <Filter>头文件\Model\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIChatFilter.h">
+      <Filter>头文件\Model\Chat\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="YCChannelFilter.h">
+      <Filter>头文件\Model\Chat\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="YCBlackFilter.h">
+      <Filter>头文件\Model\Chat\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="YCChatParser.h">
+      <Filter>头文件\Model\Chat\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIChatInterceptor.h">
+      <Filter>头文件\Model\Chat\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="YCChatMessage.h">
+      <Filter>头文件\Model\Chat\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="YCChatMsgDefine.h">
+      <Filter>头文件\Model\Chat\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIGameStage.h">
+      <Filter>头文件\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="YCGameStage.h">
+      <Filter>头文件\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSelectRoleStage.h">
+      <Filter>头文件\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="YCLoginStage.h">
+      <Filter>头文件\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="YCGameStageDefine.h">
+      <Filter>头文件\Stage\Def</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTaskManager.h">
+      <Filter>头文件\Model\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIMessageUnit.h">
+      <Filter>头文件\Model\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTextUnit.h">
+      <Filter>头文件\Model\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="YCImageUnit.h">
+      <Filter>头文件\Model\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTaskParser.h">
+      <Filter>头文件\Model\Task\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTaskMessage.h">
+      <Filter>头文件\Model\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTaskDefine.h">
+      <Filter>头文件\Model\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIUnitAction.h">
+      <Filter>头文件\Model\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="YCBuff.h">
+      <Filter>头文件\Model\Buff</Filter>
+    </ClInclude>
+    <ClInclude Include="YCBuffMeta.h">
+      <Filter>头文件\Model\Buff</Filter>
+    </ClInclude>
+    <ClInclude Include="YCBuffBuilder.h">
+      <Filter>头文件\Model\Buff</Filter>
+    </ClInclude>
+    <ClInclude Include="YCBuffManager.h">
+      <Filter>头文件\Model\Buff</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

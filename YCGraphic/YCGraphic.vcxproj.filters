@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\Scene">
+      <UniqueIdentifier>{a0ed3c66-83cc-4bf0-9ca7-e4513d527a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\Scene">
+      <UniqueIdentifier>{2cd45073-6a30-4552-a206-80963fb2fb31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scene\def">
+      <UniqueIdentifier>{a704b972-c91b-4f10-acaa-84ab2b16ed23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="头文件\Texture">
+      <UniqueIdentifier>{4f656c79-dc79-4e0b-a88c-ac5adf7412cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Texture">
+      <UniqueIdentifier>{82448dcb-08fb-46aa-a3e3-17451b113c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Texture\def">
+      <UniqueIdentifier>{bf9aadb5-99f5-4ce3-9a84-522184a11133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Texture\loader">
+      <UniqueIdentifier>{941bc548-5766-4a65-a08d-dac840edb676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Texture\loader">
+      <UniqueIdentifier>{713f8fd0-45ac-4abb-93de-c6fba8fb886c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Texture\File">
+      <UniqueIdentifier>{681267ff-5ebf-48a1-a51b-0be8dda514ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Texture\File">
+      <UniqueIdentifier>{f0e25213-9569-46ae-8cd6-3b882700b60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI">
+      <UniqueIdentifier>{3f879d9d-b261-47aa-9b99-778e2bb1f15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI">
+      <UniqueIdentifier>{838720dc-d2c9-4389-81c6-6e52cfae7faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\Controller">
+      <UniqueIdentifier>{180c6ea5-883d-4f0c-a21b-6db3061069e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View">
+      <UniqueIdentifier>{a1991e70-609b-4a96-a806-102e189e2b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags">
+      <UniqueIdentifier>{f01a836b-8389-4bbb-bfc3-e37c0adda0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\Model">
+      <UniqueIdentifier>{81e5c060-344d-4926-8348-d8f87c4116a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\Controller">
+      <UniqueIdentifier>{d3f44146-534b-47e9-b82e-111da65bb4f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View">
+      <UniqueIdentifier>{a6d04918-de54-4cda-bc8a-23c33f756d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Background">
+      <UniqueIdentifier>{f47b1598-d4c8-4dad-8c2e-b044bec79d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags">
+      <UniqueIdentifier>{f6ea478e-3886-4555-ae86-382376cffaae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\Model">
+      <UniqueIdentifier>{c8188862-2353-4ea9-bb7c-8d8bab3218a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Background">
+      <UniqueIdentifier>{b06ddfee-b11e-4b70-9c7a-3f3aa6a01f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Sprite">
+      <UniqueIdentifier>{14dea2eb-5864-4f31-ad81-691cd91011ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Sprite\Action">
+      <UniqueIdentifier>{f703bddf-8285-41c0-9a77-57339734f51e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Sprite">
+      <UniqueIdentifier>{48b52630-562d-47e0-a846-8b2d64e72b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Sprite\Action">
+      <UniqueIdentifier>{71ff7ac3-d829-4beb-ba3f-b3b3ae6e8146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags\Helper">
+      <UniqueIdentifier>{b433feb6-cfed-4d05-8a0d-6ff3620a301f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags\Helper">
+      <UniqueIdentifier>{666edebb-04c6-481e-b037-befab77b437e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags\Style">
+      <UniqueIdentifier>{b9a3981c-e87c-4e21-8458-ddd5b58a5c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags\Style">
+      <UniqueIdentifier>{62a26fae-7c53-421d-9e06-2244126749e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags\Core">
+      <UniqueIdentifier>{353cdc70-997d-457e-b8d0-3eac458acd49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags\Core">
+      <UniqueIdentifier>{dace533e-f36f-428f-a9f3-d8bbea1c5d9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags\Dom">
+      <UniqueIdentifier>{77b24fbe-f416-43dc-aeb4-5d99bd6b9ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags\Core\Container">
+      <UniqueIdentifier>{b940bd98-5f9f-40cd-9e79-d576cfece779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags\Dom">
+      <UniqueIdentifier>{8bd01f9c-d935-472b-8dd6-13258de3d0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags\Core\Container">
+      <UniqueIdentifier>{046d1e0e-cfb5-48dd-8fb3-c5d5b64b914a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags\Action">
+      <UniqueIdentifier>{e2e4fd13-bff4-4c6b-b489-a205a2af58b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags\Action">
+      <UniqueIdentifier>{6794684c-5c29-4ad0-bd28-5e1e62832e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\I18n">
+      <UniqueIdentifier>{b8baa90f-a3e4-483b-b6db-a0132630a6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\I18n">
+      <UniqueIdentifier>{c31af587-f660-478a-8e31-940e5393ffe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Font">
+      <UniqueIdentifier>{3bd2249f-5e77-4575-a122-6ed20a15ceb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Font">
+      <UniqueIdentifier>{5f470e25-c193-487f-ba1e-882026acd996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Query">
+      <UniqueIdentifier>{7fe891e2-5995-4ee1-b64e-03c516fafab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Query">
+      <UniqueIdentifier>{26fa7f0b-6067-4637-a0d7-7707e9cf9850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\View\Tags\Core\Pseudo">
+      <UniqueIdentifier>{8baec314-bb2e-4c73-8b51-cf1d4146d809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\View\Tags\Core\Pseudo">
+      <UniqueIdentifier>{81093626-505d-44dc-a6d6-4cc941bb444d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Map">
+      <UniqueIdentifier>{021d2c68-911c-46f8-acb0-3c6b68b38169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Map">
+      <UniqueIdentifier>{0bd8b94c-541a-4410-bf5f-322c0120db1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Sprite\Animation">
+      <UniqueIdentifier>{7eb1b0df-ef4f-4b53-a97b-624625c3e17a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Sprite\Animation">
+      <UniqueIdentifier>{b0464a35-47e3-42bc-b2be-d51106302673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Utils">
+      <UniqueIdentifier>{d0c6d616-6c3b-4f5f-8d18-a6fce92e6365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utils">
+      <UniqueIdentifier>{c0500af9-78b9-42cd-99fd-e07bb30c8c4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="YCGraphic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="YCActionManager.cpp">
+      <Filter>源文件\Sprite\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIAction.cpp">
+      <Filter>源文件\Sprite\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCISceneLayer.cpp">
+      <Filter>源文件\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMapLayer.cpp">
+      <Filter>源文件\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="YCScene.cpp">
+      <Filter>源文件\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSceneLayer.cpp">
+      <Filter>源文件\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUILayer.cpp">
+      <Filter>源文件\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSceneManager.cpp">
+      <Filter>源文件\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSceneBuilder.cpp">
+      <Filter>源文件\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="YCISprite.cpp">
+      <Filter>源文件\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTextureManager.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTexture.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCITexture2D.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSingleTexture2D.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTextureIDUtil.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTextureFactory.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCFileTextureLoader.cpp">
+      <Filter>源文件\Texture\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIAnimation.cpp">
+      <Filter>源文件\Sprite\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="YCAnimationUtil.cpp">
+      <Filter>源文件\Sprite\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="YCAnimationManager.cpp">
+      <Filter>源文件\Sprite\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="YCAtlasTexture2D.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCNetworkFileLoader.cpp">
+      <Filter>源文件\Texture\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="YCITextureFile.cpp">
+      <Filter>源文件\Texture\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCPNGTextureFile.cpp">
+      <Filter>源文件\Texture\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTGATextureFile.cpp">
+      <Filter>源文件\Texture\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCCompositedAnimation.cpp">
+      <Filter>源文件\Sprite\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSingleAnimation.cpp">
+      <Filter>源文件\Sprite\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSplitBackground.cpp">
+      <Filter>源文件\UI\View\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="YCColorBackground.cpp">
+      <Filter>源文件\UI\View\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIBackground.cpp">
+      <Filter>源文件\UI\View\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="YCImageBackground.cpp">
+      <Filter>源文件\UI\View\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIModel.cpp">
+      <Filter>源文件\UI\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIContainer.cpp">
+      <Filter>源文件\UI\View\Tags\Core\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIComponent.cpp">
+      <Filter>源文件\UI\View</Filter>
+    </ClCompile>
+    <ClCompile Include="YCNls.cpp">
+      <Filter>源文件\UI\View\I18n</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIUITag.cpp">
+      <Filter>源文件\UI\View\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="YCAnimationBackground.cpp">
+      <Filter>源文件\UI\View\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTagBuilder.cpp">
+      <Filter>源文件\UI\View\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTagFactory.cpp">
+      <Filter>源文件\UI\View\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITagMeta.cpp">
+      <Filter>源文件\UI\View\Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITagHelper.cpp">
+      <Filter>源文件\UI\View\Tags\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="YCCSSParser.cpp">
+      <Filter>源文件\UI\View\Tags\Style</Filter>
+    </ClCompile>
+    <ClCompile Include="YCCSSContext.cpp">
+      <Filter>源文件\UI\View\Tags\Style</Filter>
+    </ClCompile>
+    <ClCompile Include="YCCSSNode.cpp">
+      <Filter>源文件\UI\View\Tags\Style</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITag.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIDOM.cpp">
+      <Filter>源文件\UI\View\Tags\Dom</Filter>
+    </ClCompile>
+    <ClCompile Include="YCDialog.cpp">
+      <Filter>源文件\UI\View\Tags\Core\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="YCWindow.cpp">
+      <Filter>源文件\UI\View\Tags\Core\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIManager.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIDomBuilder.cpp">
+      <Filter>源文件\UI\View\Tags\Dom</Filter>
+    </ClCompile>
+    <ClCompile Include="YCCSSItem.cpp">
+      <Filter>源文件\UI\View\Tags\Style</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIParallelAction.cpp">
+      <Filter>源文件\UI\View\Tags\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIController.cpp">
+      <Filter>源文件\UI\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUISprite.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIButton.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUICheckBox.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUISelect.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIDiv.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIImg.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIUIToggleButton.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIP.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIPasswordField.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIRadio.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUISpan.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITextArea.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITextField.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIUl.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUILi.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCQuery.cpp">
+      <Filter>源文件\Query</Filter>
+    </ClCompile>
+    <ClCompile Include="YCQueryFactory.cpp">
+      <Filter>源文件\Query</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIHoverState.cpp">
+      <Filter>源文件\UI\View\Tags\Core\Pseudo</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFontSprite.cpp">
+      <Filter>源文件\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="YCFreeTypeSprite.cpp">
+      <Filter>源文件\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="YCD3DXFontSprite.cpp">
+      <Filter>源文件\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="YCFontSpriteFactory.cpp">
+      <Filter>源文件\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="YCITexture.cpp">
+      <Filter>源文件\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="YCDynamicUIDOM.cpp">
+      <Filter>源文件\UI\View\Tags\Dom</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITable.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITd.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITr.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUITh.cpp">
+      <Filter>源文件\UI\View\Tags\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIMap.cpp">
+      <Filter>源文件\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIMapTile.cpp">
+      <Filter>源文件\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIMapObject.cpp">
+      <Filter>源文件\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSequenceAction.cpp">
+      <Filter>源文件\Sprite\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCRepeatAction.cpp">
+      <Filter>源文件\Sprite\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCParallelAction.cpp">
+      <Filter>源文件\Sprite\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCSingleAction.cpp">
+      <Filter>源文件\Sprite\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCConditionAction.cpp">
+      <Filter>源文件\Sprite\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIClickState.cpp">
+      <Filter>源文件\UI\View\Tags\Core\Pseudo</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIDisableState.cpp">
+      <Filter>源文件\UI\View\Tags\Core\Pseudo</Filter>
+    </ClCompile>
+    <ClCompile Include="YCUIMediator.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="YCGraphic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="YCActionManager.h">
+      <Filter>头文件\Sprite\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIAction.h">
+      <Filter>头文件\Sprite\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCISceneLayer.h">
+      <Filter>头文件\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMapLayer.h">
+      <Filter>头文件\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="YCScene.h">
+      <Filter>头文件\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSceneLayer.h">
+      <Filter>头文件\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUILayer.h">
+      <Filter>头文件\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSceneDef.h">
+      <Filter>头文件\Scene\def</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSceneManager.h">
+      <Filter>头文件\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSceneBuilder.h">
+      <Filter>头文件\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="YCISprite.h">
+      <Filter>头文件\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTextureManager.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTexture.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTextureDef.h">
+      <Filter>头文件\Texture\def</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTextureIDUtil.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCITexture2D.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSingleTexture2D.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTextureFactory.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCFileTextureLoader.h">
+      <Filter>头文件\Texture\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIAnimation.h">
+      <Filter>头文件\Sprite\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAnimationUtil.h">
+      <Filter>头文件\Sprite\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAnimationManager.h">
+      <Filter>头文件\Sprite\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAtlasTexture2D.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCNetworkFileLoader.h">
+      <Filter>头文件\Texture\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="YCNetworkFileLoadListener.h">
+      <Filter>头文件\Texture\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="YCITextureFile.h">
+      <Filter>头文件\Texture\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCPNGTextureFile.h">
+      <Filter>头文件\Texture\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTGATextureFile.h">
+      <Filter>头文件\Texture\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCCompositedAnimation.h">
+      <Filter>头文件\Sprite\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAnimationEventListener.h">
+      <Filter>头文件\Sprite\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSingleAnimation.h">
+      <Filter>头文件\Sprite\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIModel.h">
+      <Filter>头文件\UI\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIContainer.h">
+      <Filter>头文件\UI\View\Tags\Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIUITag.h">
+      <Filter>头文件\UI\View\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIMsg.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIComponent.h">
+      <Filter>头文件\UI\View</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSplitBackground.h">
+      <Filter>头文件\UI\View\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="YCColorBackground.h">
+      <Filter>头文件\UI\View\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIBackground.h">
+      <Filter>头文件\UI\View\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="YCImageBackground.h">
+      <Filter>头文件\UI\View\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="YCNls.h">
+      <Filter>头文件\UI\View\I18n</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAnimationBackground.h">
+      <Filter>头文件\UI\View\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTagBuilder.h">
+      <Filter>头文件\UI\View\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTagFactory.h">
+      <Filter>头文件\UI\View\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITagMeta.h">
+      <Filter>头文件\UI\View\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITagHelper.h">
+      <Filter>头文件\UI\View\Tags\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="YCCSSParser.h">
+      <Filter>头文件\UI\View\Tags\Style</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITagDef.h">
+      <Filter>头文件\UI\View\Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="YCCSSContext.h">
+      <Filter>头文件\UI\View\Tags\Style</Filter>
+    </ClInclude>
+    <ClInclude Include="YCCSSNode.h">
+      <Filter>头文件\UI\View\Tags\Style</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIController.h">
+      <Filter>头文件\UI\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITag.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIDOM.h">
+      <Filter>头文件\UI\View\Tags\Dom</Filter>
+    </ClInclude>
+    <ClInclude Include="YCDialog.h">
+      <Filter>头文件\UI\View\Tags\Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="YCWindow.h">
+      <Filter>头文件\UI\View\Tags\Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIManager.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIDomBuilder.h">
+      <Filter>头文件\UI\View\Tags\Dom</Filter>
+    </ClInclude>
+    <ClInclude Include="YCCSSItem.h">
+      <Filter>头文件\UI\View\Tags\Style</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIUIAction.h">
+      <Filter>头文件\UI\View\Tags\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIParallelAction.h">
+      <Filter>头文件\UI\View\Tags\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCFontDef.h">
+      <Filter>头文件\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIButton.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUICheckBox.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUISelect.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIDiv.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIImg.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIUIToggleButton.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIP.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIPasswordField.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIRadio.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUISpan.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITextArea.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITextField.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUISprite.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIUl.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUILi.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCQuery.h">
+      <Filter>头文件\Query</Filter>
+    </ClInclude>
+    <ClInclude Include="YCQueryFactory.h">
+      <Filter>头文件\Query</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIHoverState.h">
+      <Filter>头文件\UI\View\Tags\Core\Pseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFontSprite.h">
+      <Filter>头文件\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="YCFreeTypeSprite.h">
+      <Filter>头文件\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="YCD3DXFontSprite.h">
+      <Filter>头文件\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="YCFontSpriteFactory.h">
+      <Filter>头文件\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="YCITexture.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCRect.h">
+      <Filter>头文件\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="YCDynamicUIDOM.h">
+      <Filter>头文件\UI\View\Tags\Dom</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITable.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITd.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITr.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUITh.h">
+      <Filter>头文件\UI\View\Tags\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIMap.h">
+      <Filter>头文件\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIMapTile.h">
+      <Filter>头文件\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIMapObject.h">
+      <Filter>头文件\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMapDef.h">
+      <Filter>头文件\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIMapFactory.h">
+      <Filter>头文件\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="YCRepeatAction.h">
+      <Filter>头文件\Sprite\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSequenceAction.h">
+      <Filter>头文件\Sprite\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCParallelAction.h">
+      <Filter>头文件\Sprite\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSingleAction.h">
+      <Filter>头文件\Sprite\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCConditionAction.h">
+      <Filter>头文件\Sprite\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="YCEvent.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIClickState.h">
+      <Filter>头文件\UI\View\Tags\Core\Pseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIDisableState.h">
+      <Filter>头文件\UI\View\Tags\Core\Pseudo</Filter>
+    </ClInclude>
+    <ClInclude Include="YCUIMediator.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

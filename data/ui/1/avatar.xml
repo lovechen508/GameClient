@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<components>
+	<window group="avatar" 
+	        weight="1" 
+			class="normal_window" 
+			accelerateKey="shift+a"
+			onOpen="YCQuery.selector('this').show().move('slow', 'HALF_SCREEN_WIDTH', 'HALF_SCREEN_HEIGHT')">
+		
+		<script file=".\lua\avatar.lua" />
+		<layout file=".\layout\avatar.css" />
+	
+		<p class="title"><code>YCQuery.selector('this').value(YCParameter.name);</code></p>
+<!--
+		<ul>		
+			<li onClick="YCQuery.selector('div.tab').hide();YCQuery.selector('div#player').show();">人物</li>
+			<li>魔神</li>
+			<li>魔神</li>
+		
+			<code>
+				if YCParameter.mainPlayer == 1 then
+					YCQuery.selector('this').append("&lt;li onClick=\"YCQuery.selector('div.tab').hide();YCQuery.selector('div#fabao').show()\"&gt;法宝&lt;/li&gt;");
+				end
+			</code>
+		</ul>
+
+		<table>
+			<th><td class="lastname">姓</td><td class="surname">名</td></th>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr class="notlast"><td class="lastname">Liao</td><td class="surname">Andy</td></tr>
+			<tr><td class="lastname">Liao</td><td class="surname">Knuth</td></tr>
+		</table>
+
+		<div class="tab" id="player">
+			<p>XXX</p>
+		</div>
+		
+		<div class="tab" id="fabao">
+			<p>YYY</p>
+		</div>
+-->
+	</window>
+</components>

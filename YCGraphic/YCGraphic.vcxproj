@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Distribute|Win32">
+      <Configuration>Debug_Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Distribute|Win32">
+      <Configuration>Release_Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>YC_Graphic</ProjectName>
+    <ProjectGuid>{D5330BD1-DC5A-452E-8C29-02198033C11D}</ProjectGuid>
+    <RootNamespace>YCGraphic</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;..\3rd\directx\9.0\Include;..\3rd\freetype2\2.4.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\3rd\directx\9.0\lib\*;..\3rd\freetype2\2.4.10\lib\freetype2410MT_D.lib;..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;..\debug\YC_Basic.lib;..\debug\YC_Config.lib;..\debug\YC_Network.lib;..\debug\YC_Input.lib;..\debug\YC_Lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>rem mkdir ..\..\Distribute\debug\include\YCGraphic
+rem copy YC*.h ..\..\Distribute\debug\include\YCGraphic
+rem copy ..\debug\YC_Graphic.lib ..\..\Distribute\debug\lib
+rem copy ..\debug\YC_Graphic.dll ..\..\Distribute\debug\bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;..\3rd\directx\9.0\Include;..\3rd\freetype2\2.4.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\3rd\directx\9.0\lib\*;..\3rd\freetype2\2.4.10\lib\freetype2410MT_D.lib;..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;..\debug\YC_Basic.lib;..\debug\YC_Config.lib;..\debug\YC_Network.lib;..\debug\YC_Input.lib;..\debug\YC_Lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\Distribute\debug\include\YCGraphic
+copy YC*.h ..\..\Distribute\debug\include\YCGraphic
+copy ..\debug\YC_Graphic.lib ..\..\Distribute\debug\lib
+copy ..\debug\YC_Graphic.dll ..\..\Distribute\debug\bin
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\3rd\directx\9.0\Include;..;..\3rd\freetype2\2.4.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;..\3rd\directx\9.0\lib\*;..\3rd\freetype2\2.4.10\lib\freetype2410MT.lib;..\3rd\gperftools\2.0\libtcmalloc_minimal.lib;..\bin\YC_Basic.lib;..\bin\YC_Config.lib;..\bin\YC_Network.lib;..\bin\YC_Lua.lib;..\bin\YC_Input.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>rem mkdir ..\..\Distribute\release\include\YCGraphic
+rem copy YC*.h ..\..\Distribute\release\include\YCGraphic
+rem copy ..\bin\YC_Graphic.lib ..\..\Distribute\release\lib
+rem copy ..\bin\YC_Graphic.dll ..\..\Distribute\release\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\3rd\directx\9.0\Include;..;..\3rd\freetype2\2.4.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;..\3rd\directx\9.0\lib\*;..\3rd\freetype2\2.4.10\lib\freetype2410MT.lib;..\3rd\gperftools\2.0\libtcmalloc_minimal.lib;..\bin\YC_Basic.lib;..\bin\YC_Config.lib;..\bin\YC_Network.lib;..\bin\YC_Lua.lib;..\bin\YC_Input.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\Distribute\release\include\YCGraphic
+copy YC*.h ..\..\Distribute\release\include\YCGraphic
+copy ..\bin\YC_Graphic.lib ..\..\Distribute\release\lib
+copy ..\bin\YC_Graphic.dll ..\..\Distribute\release\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="YCConditionAction.cpp" />
+    <ClCompile Include="YCD3DXFontSprite.cpp" />
+    <ClCompile Include="YCDynamicUIDOM.cpp" />
+    <ClCompile Include="YCFontSpriteFactory.cpp" />
+    <ClCompile Include="YCFreeTypeSprite.cpp" />
+    <ClCompile Include="YCIController.cpp" />
+    <ClCompile Include="YCAnimationBackground.cpp" />
+    <ClCompile Include="YCAtlasTexture2D.cpp" />
+    <ClCompile Include="YCAnimationManager.cpp" />
+    <ClCompile Include="YCAnimationUtil.cpp" />
+    <ClCompile Include="YCIFontSprite.cpp" />
+    <ClCompile Include="YCIMap.cpp" />
+    <ClCompile Include="YCIMapObject.cpp" />
+    <ClCompile Include="YCIMapTile.cpp" />
+    <ClCompile Include="YCITexture.cpp" />
+    <ClCompile Include="YCParallelAction.cpp" />
+    <ClCompile Include="YCQuery.cpp" />
+    <ClCompile Include="YCQueryFactory.cpp" />
+    <ClCompile Include="YCRepeatAction.cpp" />
+    <ClCompile Include="YCSequenceAction.cpp" />
+    <ClCompile Include="YCSingleAction.cpp" />
+    <ClCompile Include="YCUIButton.cpp" />
+    <ClCompile Include="YCUICheckBox.cpp" />
+    <ClCompile Include="YCColorBackground.cpp" />
+    <ClCompile Include="YCUIClickState.cpp" />
+    <ClCompile Include="YCUIDisableState.cpp" />
+    <ClCompile Include="YCUILi.cpp" />
+    <ClCompile Include="YCUIHoverState.cpp" />
+    <ClCompile Include="YCUIMediator.cpp" />
+    <ClCompile Include="YCUISelect.cpp" />
+    <ClCompile Include="YCCompositedAnimation.cpp" />
+    <ClCompile Include="YCCSSContext.cpp" />
+    <ClCompile Include="YCCSSItem.cpp" />
+    <ClCompile Include="YCCSSNode.cpp" />
+    <ClCompile Include="YCCSSParser.cpp" />
+    <ClCompile Include="YCDialog.cpp" />
+    <ClCompile Include="YCFileTextureLoader.cpp" />
+    <ClCompile Include="YCGraphic.cpp" />
+    <ClCompile Include="YCIAnimation.cpp" />
+    <ClCompile Include="YCIBackground.cpp" />
+    <ClCompile Include="YCIComponent.cpp" />
+    <ClCompile Include="YCIContainer.cpp" />
+    <ClCompile Include="YCImageBackground.cpp" />
+    <ClCompile Include="YCUIImg.cpp" />
+    <ClCompile Include="YCIModel.cpp" />
+    <ClCompile Include="YCISprite.cpp" />
+    <ClCompile Include="YCITexture2D.cpp" />
+    <ClCompile Include="YCIUIToggleButton.cpp" />
+    <ClCompile Include="YCIUITag.cpp" />
+    <ClCompile Include="YCUIParallelAction.cpp" />
+    <ClCompile Include="YCUISprite.cpp" />
+    <ClCompile Include="YCUITable.cpp" />
+    <ClCompile Include="YCUITd.cpp" />
+    <ClCompile Include="YCUITh.cpp" />
+    <ClCompile Include="YCUITr.cpp" />
+    <ClCompile Include="YCUIUl.cpp" />
+    <ClCompile Include="YCNetworkFileLoader.cpp" />
+    <ClCompile Include="YCNls.cpp" />
+    <ClCompile Include="YCUIP.cpp" />
+    <ClCompile Include="YCUIPasswordField.cpp" />
+    <ClCompile Include="YCPNGTextureFile.cpp" />
+    <ClCompile Include="YCUIRadio.cpp" />
+    <ClCompile Include="YCSceneBuilder.cpp" />
+    <ClCompile Include="YCSceneManager.cpp" />
+    <ClCompile Include="YCSingleAnimation.cpp" />
+    <ClCompile Include="YCUISpan.cpp" />
+    <ClCompile Include="YCSplitBackground.cpp" />
+    <ClCompile Include="YCActionManager.cpp" />
+    <ClCompile Include="YCIAction.cpp" />
+    <ClCompile Include="YCISceneLayer.cpp" />
+    <ClCompile Include="YCMapLayer.cpp" />
+    <ClCompile Include="YCScene.cpp" />
+    <ClCompile Include="YCSceneLayer.cpp" />
+    <ClCompile Include="YCTagBuilder.cpp" />
+    <ClCompile Include="YCTagFactory.cpp" />
+    <ClCompile Include="YCUITextArea.cpp" />
+    <ClCompile Include="YCUITextField.cpp" />
+    <ClCompile Include="YCTexture.cpp" />
+    <ClCompile Include="YCSingleTexture2D.cpp" />
+    <ClCompile Include="YCTextureFactory.cpp" />
+    <ClCompile Include="YCITextureFile.cpp" />
+    <ClCompile Include="YCTextureIDUtil.cpp" />
+    <ClCompile Include="YCTextureManager.cpp" />
+    <ClCompile Include="YCTGATextureFile.cpp" />
+    <ClCompile Include="YCUIDiv.cpp" />
+    <ClCompile Include="YCUIDOM.cpp" />
+    <ClCompile Include="YCUIDomBuilder.cpp" />
+    <ClCompile Include="YCUILayer.cpp" />
+    <ClCompile Include="YCUIManager.cpp" />
+    <ClCompile Include="YCUITag.cpp" />
+    <ClCompile Include="YCUITagHelper.cpp" />
+    <ClCompile Include="YCUITagMeta.cpp" />
+    <ClCompile Include="YCWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="YCAnimationBackground.h" />
+    <ClInclude Include="YCAnimationEventListener.h" />
+    <ClInclude Include="YCAtlasTexture2D.h" />
+    <ClInclude Include="YCAnimationManager.h" />
+    <ClInclude Include="YCAnimationUtil.h" />
+    <ClInclude Include="YCConditionAction.h" />
+    <ClInclude Include="YCD3DXFontSprite.h" />
+    <ClInclude Include="YCDynamicUIDOM.h" />
+    <ClInclude Include="YCEvent.h" />
+    <ClInclude Include="YCFontSpriteFactory.h" />
+    <ClInclude Include="YCFreeTypeSprite.h" />
+    <ClInclude Include="YCIFontSprite.h" />
+    <ClInclude Include="YCIMap.h" />
+    <ClInclude Include="YCIMapFactory.h" />
+    <ClInclude Include="YCIMapObject.h" />
+    <ClInclude Include="YCIMapTile.h" />
+    <ClInclude Include="YCITexture.h" />
+    <ClInclude Include="YCMapDef.h" />
+    <ClInclude Include="YCParallelAction.h" />
+    <ClInclude Include="YCQuery.h" />
+    <ClInclude Include="YCQueryFactory.h" />
+    <ClInclude Include="YCRect.h" />
+    <ClInclude Include="YCRepeatAction.h" />
+    <ClInclude Include="YCSequenceAction.h" />
+    <ClInclude Include="YCSingleAction.h" />
+    <ClInclude Include="YCUIButton.h" />
+    <ClInclude Include="YCUICheckBox.h" />
+    <ClInclude Include="YCColorBackground.h" />
+    <ClInclude Include="YCUIClickState.h" />
+    <ClInclude Include="YCUIDisableState.h" />
+    <ClInclude Include="YCUILi.h" />
+    <ClInclude Include="YCUIHoverState.h" />
+    <ClInclude Include="YCUIMediator.h" />
+    <ClInclude Include="YCUISelect.h" />
+    <ClInclude Include="YCCompositedAnimation.h" />
+    <ClInclude Include="YCCSSContext.h" />
+    <ClInclude Include="YCCSSItem.h" />
+    <ClInclude Include="YCCSSNode.h" />
+    <ClInclude Include="YCCSSParser.h" />
+    <ClInclude Include="YCDialog.h" />
+    <ClInclude Include="YCFileTextureLoader.h" />
+    <ClInclude Include="YCFontDef.h" />
+    <ClInclude Include="YCGraphic.h" />
+    <ClInclude Include="YCIAnimation.h" />
+    <ClInclude Include="YCIBackground.h" />
+    <ClInclude Include="YCIComponent.h" />
+    <ClInclude Include="YCIContainer.h" />
+    <ClInclude Include="YCIController.h" />
+    <ClInclude Include="YCImageBackground.h" />
+    <ClInclude Include="YCUIImg.h" />
+    <ClInclude Include="YCIModel.h" />
+    <ClInclude Include="YCISprite.h" />
+    <ClInclude Include="YCITexture2D.h" />
+    <ClInclude Include="YCIUIToggleButton.h" />
+    <ClInclude Include="YCIUIAction.h" />
+    <ClInclude Include="YCIUITag.h" />
+    <ClInclude Include="YCUIParallelAction.h" />
+    <ClInclude Include="YCUISprite.h" />
+    <ClInclude Include="YCUITable.h" />
+    <ClInclude Include="YCUITd.h" />
+    <ClInclude Include="YCUITh.h" />
+    <ClInclude Include="YCUITr.h" />
+    <ClInclude Include="YCUIUl.h" />
+    <ClInclude Include="YCNetworkFileLoader.h" />
+    <ClInclude Include="YCNetworkFileLoadListener.h" />
+    <ClInclude Include="YCNls.h" />
+    <ClInclude Include="YCUIP.h" />
+    <ClInclude Include="YCUIPasswordField.h" />
+    <ClInclude Include="YCPNGTextureFile.h" />
+    <ClInclude Include="YCUIRadio.h" />
+    <ClInclude Include="YCSceneBuilder.h" />
+    <ClInclude Include="YCSceneManager.h" />
+    <ClInclude Include="YCSingleAnimation.h" />
+    <ClInclude Include="YCUISpan.h" />
+    <ClInclude Include="YCSplitBackground.h" />
+    <ClInclude Include="YCActionManager.h" />
+    <ClInclude Include="YCIAction.h" />
+    <ClInclude Include="YCISceneLayer.h" />
+    <ClInclude Include="YCMapLayer.h" />
+    <ClInclude Include="YCScene.h" />
+    <ClInclude Include="YCSceneLayer.h" />
+    <ClInclude Include="YCTagBuilder.h" />
+    <ClInclude Include="YCTagFactory.h" />
+    <ClInclude Include="YCUITextArea.h" />
+    <ClInclude Include="YCUITextField.h" />
+    <ClInclude Include="YCTexture.h" />
+    <ClInclude Include="YCSingleTexture2D.h" />
+    <ClInclude Include="YCTextureDef.h" />
+    <ClInclude Include="YCTextureFactory.h" />
+    <ClInclude Include="YCITextureFile.h" />
+    <ClInclude Include="YCTextureIDUtil.h" />
+    <ClInclude Include="YCTextureManager.h" />
+    <ClInclude Include="YCTGATextureFile.h" />
+    <ClInclude Include="YCUIDiv.h" />
+    <ClInclude Include="YCUIDOM.h" />
+    <ClInclude Include="YCUIDomBuilder.h" />
+    <ClInclude Include="YCUILayer.h" />
+    <ClInclude Include="YCSceneDef.h" />
+    <ClInclude Include="YCUIManager.h" />
+    <ClInclude Include="YCUIMsg.h" />
+    <ClInclude Include="YCUITag.h" />
+    <ClInclude Include="YCUITagDef.h" />
+    <ClInclude Include="YCUITagHelper.h" />
+    <ClInclude Include="YCUITagMeta.h" />
+    <ClInclude Include="YCWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

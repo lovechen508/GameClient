@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tag name="div" baseTag="span" status="hover">
+	<css name="display" default="block" />
+</tag>

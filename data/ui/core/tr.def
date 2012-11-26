@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tag name="tr" baseTag="none" status="hover">
+		
+	<attr name="id" />
+	<attr name="class" />
+	
+	<css name="width" />
+	<css name="height" />
+	
+	<css name="background-color" />
+	<css name="background-image" />
+	
+	<css name="display" />
+	
+	<css name="border-bottom" />
+</tag>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Distribute|Win32">
+      <Configuration>Debug_Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Distribute|Win32">
+      <Configuration>Release_Distribute</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>YC_Basic</ProjectName>
+    <ProjectGuid>{C6F1CF90-5DB5-4A89-ABBC-3E346F45C60B}</ProjectGuid>
+    <RootNamespace>YCBasic</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'" />
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    </CustomBuildAfterTargets>
+    <CustomBuildAfterTargets Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\3rd\zlib\1.2.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;..\3rd\zlib\1.2.7\lib\debug\zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>rem mkdir ..\..\Distribute\debug\include\YCBasic
+rem copy YC*.h ..\..\Distribute\debug\include\YCBasic
+rem copy ..\debug\YC_Basic.lib ..\..\Distribute\debug\lib
+rem copy ..\debug\YC_Basic.dll ..\..\Distribute\debug\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\3rd\zlib\1.2.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;..\3rd\zlib\1.2.7\lib\debug\zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\Distribute\debug\include\YCBasic
+copy YC*.h ..\..\Distribute\debug\include\YCBasic
+copy ..\debug\YC_Basic.lib ..\..\Distribute\debug\lib
+copy ..\debug\YC_Basic.dll ..\..\Distribute\debug\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>-DZ_PREFIX;WIN32;NDEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\3rd\zlib\1.2.7\include;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>..\3rd\gperftools\2.0\libtcmalloc_minimal.lib;..\3rd\zlib\1.2.7\lib\release\zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>rem mkdir ..\..\Distribute\release\include\YCBasic
+rem copy *.h ..\..\Distribute\release\include\YCBasic
+rem copy ..\bin\YC_Basic.lib ..\..\Distribute\release\lib
+rem copy ..\bin\YC_Basic.dll ..\..\Distribute\release\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Distribute|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>-DZ_PREFIX;WIN32;NDEBUG;_WINDOWS;_USRDLL;YCAPI=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\3rd\zlib\1.2.7\include;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>..\3rd\gperftools\2.0\libtcmalloc_minimal.lib;..\3rd\zlib\1.2.7\lib\release\zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\Distribute\release\include\YCBasic
+copy *.h ..\..\Distribute\release\include\YCBasic
+copy ..\bin\YC_Basic.lib ..\..\Distribute\release\lib
+copy ..\bin\YC_Basic.dll ..\..\Distribute\release\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="YCAssert.cpp" />
+    <ClCompile Include="YCBFEncryption.cpp" />
+    <ClCompile Include="YCCondition.cpp" />
+    <ClCompile Include="YCDList.cpp" />
+    <ClCompile Include="YCException.cpp" />
+    <ClCompile Include="YCFileUtil.cpp" />
+    <ClCompile Include="YCICompositeState.cpp" />
+    <ClCompile Include="YCICompress.cpp" />
+    <ClCompile Include="YCIFileCompress.cpp" />
+    <ClCompile Include="YCIFileDirectory.cpp" />
+    <ClCompile Include="YCIFileEncryption.cpp" />
+    <ClCompile Include="YCIFileNormal.cpp" />
+    <ClCompile Include="YCIFsm.cpp" />
+    <ClCompile Include="YCIFsmState.cpp" />
+    <ClCompile Include="YCILock.cpp" />
+    <ClCompile Include="YCIFilePack.cpp" />
+    <ClCompile Include="YCIPackFileBuilder.cpp" />
+    <ClCompile Include="YCIPackFileSystem.cpp" />
+    <ClCompile Include="YCIRunnable.cpp" />
+    <ClCompile Include="YCIShellCommand.cpp" />
+    <ClCompile Include="YCIStreamEncryption.cpp" />
+    <ClCompile Include="YCITimer.cpp" />
+    <ClCompile Include="YCLock.cpp" />
+    <ClCompile Include="YCLockGuard.cpp" />
+    <ClCompile Include="YCMD5.cpp" />
+    <ClCompile Include="YCPackException.cpp" />
+    <ClCompile Include="YCPathWalker.cpp" />
+    <ClCompile Include="YCQueue.cpp" />
+    <ClCompile Include="YCRWLock.cpp" />
+    <ClCompile Include="YCRegistry.cpp" />
+    <ClCompile Include="YCShell.cpp" />
+    <ClCompile Include="YCStack.cpp" />
+    <ClCompile Include="YCThread.cpp" />
+    <ClCompile Include="YCThreadPool.cpp" />
+    <ClCompile Include="YCWMTimer.cpp" />
+    <ClCompile Include="YCZlibCompress.cpp" />
+    <ClCompile Include="YCZlibFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="YCAny.h" />
+    <ClInclude Include="YCAssert.h" />
+    <ClInclude Include="YCBFEncryption.h" />
+    <ClInclude Include="YCCondition.h" />
+    <ClInclude Include="YCDef.h" />
+    <ClInclude Include="YCDList.h" />
+    <ClInclude Include="YCException.h" />
+    <ClInclude Include="YCFileUtil.h" />
+    <ClInclude Include="YCFuncAdapter.h" />
+    <ClInclude Include="YCIAbstractFile.h" />
+    <ClInclude Include="YCICompress.h" />
+    <ClInclude Include="YCIFileCompress.h" />
+    <ClInclude Include="YCIFileDirectory.h" />
+    <ClInclude Include="YCIFileNormal.h" />
+    <ClInclude Include="YCIFsmTransfer.h" />
+    <ClInclude Include="YCICloneable.h" />
+    <ClInclude Include="YCICompositeState.h" />
+    <ClInclude Include="YCIDumper.h" />
+    <ClInclude Include="YCIFileEncryption.h" />
+    <ClInclude Include="YCIFsm.h" />
+    <ClInclude Include="YCIFsmState.h" />
+    <ClInclude Include="YCILock.h" />
+    <ClInclude Include="YCIFilePack.h" />
+    <ClInclude Include="YCIPackFileBuilder.h" />
+    <ClInclude Include="YCIPackFileSystem.h" />
+    <ClInclude Include="YCIPackPersist.h" />
+    <ClInclude Include="YCIRunnable.h" />
+    <ClInclude Include="YCIShellCommand.h" />
+    <ClInclude Include="YCIShellInterceptor.h" />
+    <ClInclude Include="YCIStreamEncryption.h" />
+    <ClInclude Include="YCITimer.h" />
+    <ClInclude Include="YCLock.h" />
+    <ClInclude Include="YCLockGuard.h" />
+    <ClInclude Include="YCLogger.h" />
+    <ClInclude Include="YCMD5.h" />
+    <ClInclude Include="YCPackException.h" />
+    <ClInclude Include="YCPathWalker.h" />
+    <ClInclude Include="YCQueue.h" />
+    <ClInclude Include="YCRWLock.h" />
+    <ClInclude Include="YCRegistry.h" />
+    <ClInclude Include="YCScopeGuard.h" />
+    <ClInclude Include="YCSharedPtr.h" />
+    <ClInclude Include="YCShell.h" />
+    <ClInclude Include="YCSingleton.h" />
+    <ClInclude Include="YCStack.h" />
+    <ClInclude Include="YCStaticAssert.h" />
+    <ClInclude Include="YCStringHelper.h" />
+    <ClInclude Include="YCThread.h" />
+    <ClInclude Include="YCThreadPool.h" />
+    <ClInclude Include="YCTimePerformance.h" />
+    <ClInclude Include="YCWMTimer.h" />
+    <ClInclude Include="YCZlibCompress.h" />
+    <ClInclude Include="YCZlibFile.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\Exception">
+      <UniqueIdentifier>{67fbb811-c44c-49c3-b542-051de9d31ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Registry">
+      <UniqueIdentifier>{8201cca2-e73e-4029-93c4-038297048195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utility">
+      <UniqueIdentifier>{0f18bbf3-78fd-44bb-b0ff-9812feb35553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\Exception">
+      <UniqueIdentifier>{fd9d7d11-08a9-43d4-a6b6-aaf95a421bf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Registry">
+      <UniqueIdentifier>{bdff2eea-e290-4a63-8625-91e3d67e7f7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Utility">
+      <UniqueIdentifier>{564cba5c-a2f3-4764-bb08-990ecb27e189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="头文件\Logging">
+      <UniqueIdentifier>{4e92f19b-123f-48b5-a02d-3e3fcf5b0d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\thread">
+      <UniqueIdentifier>{66c82fc2-af51-4748-a7ad-c1f28b3f4f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\thread">
+      <UniqueIdentifier>{e311f7c1-b145-4961-a70c-9204d7cbcba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Encryption">
+      <UniqueIdentifier>{dcee4ead-9ad0-4241-96f8-f99d03e11007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Encryption">
+      <UniqueIdentifier>{4bce5a9b-5843-4013-9d9e-61b017c79b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Encryption\File">
+      <UniqueIdentifier>{f1f9214e-78b8-4787-80af-5f4c7a0ecfcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Encryption\File">
+      <UniqueIdentifier>{9f957f53-a9d6-4121-9558-a5e2f62af7e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\File">
+      <UniqueIdentifier>{9722827d-736a-4f3c-a376-a36546b74d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\File">
+      <UniqueIdentifier>{49480f6c-7dbe-4245-b396-e8a56c9c4715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Timer">
+      <UniqueIdentifier>{6d65262a-7fd8-450b-8f54-94dd1397323e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Timer">
+      <UniqueIdentifier>{c8cb19b9-7ecb-4cba-aa81-ac1c3bea9cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Encryption\String">
+      <UniqueIdentifier>{c47f1f81-38bb-4f41-93ab-839cbfdfaae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Encryption\String">
+      <UniqueIdentifier>{f5cd8bf0-ff0b-43d6-b03b-ff86c51cc038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Fsm">
+      <UniqueIdentifier>{70920bbf-a310-442a-9b2e-37674cc34bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Fsm">
+      <UniqueIdentifier>{90253fcc-2ef7-4552-82a6-e6cfa3aeca84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\File\Pack">
+      <UniqueIdentifier>{d90c3925-50e3-4cd0-94cf-caabb39612cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\File\Pack">
+      <UniqueIdentifier>{5cad9608-f0ca-43e7-b440-9da389561d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Shell">
+      <UniqueIdentifier>{d8ce493b-9a17-4098-9be3-c4f09ab89dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shell">
+      <UniqueIdentifier>{160d3a4d-b35c-4a61-bfb6-41d072c054fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Compress">
+      <UniqueIdentifier>{4bd96469-5966-4b45-bed5-b511f15a40e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Compress">
+      <UniqueIdentifier>{26147f58-e9bd-4484-a656-f13af57fdc43}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="YCException.cpp">
+      <Filter>源文件\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="YCRegistry.cpp">
+      <Filter>源文件\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="YCAssert.cpp">
+      <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="YCDList.cpp">
+      <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="YCILock.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIRunnable.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCLock.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCThread.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCThreadPool.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCLockGuard.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCRWLock.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCCondition.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFileEncryption.cpp">
+      <Filter>源文件\Encryption\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCFileUtil.cpp">
+      <Filter>源文件\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCQueue.cpp">
+      <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="YCITimer.cpp">
+      <Filter>源文件\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="YCWMTimer.cpp">
+      <Filter>源文件\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="YCStack.cpp">
+      <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFsmState.cpp">
+      <Filter>源文件\Fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFsm.cpp">
+      <Filter>源文件\Fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="YCICompositeState.cpp">
+      <Filter>源文件\Fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIStreamEncryption.cpp">
+      <Filter>源文件\Encryption\String</Filter>
+    </ClCompile>
+    <ClCompile Include="YCBFEncryption.cpp">
+      <Filter>源文件\Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIPackFileSystem.cpp">
+      <Filter>源文件\File\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="YCShell.cpp">
+      <Filter>源文件\Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIShellCommand.cpp">
+      <Filter>源文件\Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFileDirectory.cpp">
+      <Filter>源文件\File\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="YCICompress.cpp">
+      <Filter>源文件\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="YCZlibCompress.cpp">
+      <Filter>源文件\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFileCompress.cpp">
+      <Filter>源文件\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCZlibFile.cpp">
+      <Filter>源文件\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMD5.cpp">
+      <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIPackFileBuilder.cpp">
+      <Filter>源文件\File\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="YCPackException.cpp">
+      <Filter>源文件\File\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="YCPathWalker.cpp">
+      <Filter>源文件\File</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFileNormal.cpp">
+      <Filter>源文件\File\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="YCIFilePack.cpp">
+      <Filter>源文件\File\Pack</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="YCException.h">
+      <Filter>头文件\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="YCRegistry.h">
+      <Filter>头文件\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSharedPtr.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCScopeGuard.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAssert.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCDList.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIDumper.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCILock.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIRunnable.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCLock.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCThread.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCThreadPool.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCLockGuard.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCRWLock.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCCondition.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="YCLogger.h">
+      <Filter>头文件\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFileEncryption.h">
+      <Filter>头文件\Encryption\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCFileUtil.h">
+      <Filter>头文件\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCStringHelper.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCSingleton.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCICloneable.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCQueue.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCITimer.h">
+      <Filter>头文件\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="YCWMTimer.h">
+      <Filter>头文件\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTimePerformance.h">
+      <Filter>头文件\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="YCStack.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCAny.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFsmState.h">
+      <Filter>头文件\Fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFsm.h">
+      <Filter>头文件\Fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="YCICompositeState.h">
+      <Filter>头文件\Fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFsmTransfer.h">
+      <Filter>头文件\Fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="YCFuncAdapter.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIStreamEncryption.h">
+      <Filter>头文件\Encryption\String</Filter>
+    </ClInclude>
+    <ClInclude Include="YCBFEncryption.h">
+      <Filter>头文件\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIPackFileSystem.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCShell.h">
+      <Filter>头文件\Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIShellCommand.h">
+      <Filter>头文件\Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIShellInterceptor.h">
+      <Filter>头文件\Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFileDirectory.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCICompress.h">
+      <Filter>头文件\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="YCZlibCompress.h">
+      <Filter>头文件\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="YCZlibFile.h">
+      <Filter>头文件\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFileCompress.h">
+      <Filter>头文件\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIAbstractFile.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMD5.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCDef.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCStaticAssert.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIPackPersist.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIPackFileBuilder.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCPackException.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCPathWalker.h">
+      <Filter>头文件\File</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFileNormal.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCIFilePack.h">
+      <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

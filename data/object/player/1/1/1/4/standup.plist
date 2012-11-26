@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>standup_0_1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{204, 1}, {62, 115}}</string>
+			<key>offset</key>
+			<string>{1.5, -3}</string>
+			<key>sourceColorRect</key>
+			<string>{{12, 18}, {62, 115}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_0_2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{73, 1}, {65, 114}}</string>
+			<key>offset</key>
+			<string>{1, -2.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{10, 18}, {65, 114}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_0_3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{139, 1}, {64, 113}}</string>
+			<key>offset</key>
+			<string>{0.5, -4}</string>
+			<key>sourceColorRect</key>
+			<string>{{10, 20}, {64, 113}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_0_4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{267, 1}, {62, 113}}</string>
+			<key>offset</key>
+			<string>{1.5, -4}</string>
+			<key>sourceColorRect</key>
+			<string>{{12, 20}, {62, 113}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_0_5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{330, 1}, {62, 114}}</string>
+			<key>offset</key>
+			<string>{1.5, -3.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{12, 19}, {62, 114}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_4_1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {71, 129}}</string>
+			<key>offset</key>
+			<string>{-6, 4}</string>
+			<key>sourceColorRect</key>
+			<string>{{0, 4}, {71, 129}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_4_2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 131}, {60, 114}}</string>
+			<key>offset</key>
+			<string>{-0.5, -3.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{11, 19}, {60, 114}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_4_3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{62, 131}, {60, 113}}</string>
+			<key>offset</key>
+			<string>{-0.5, -4}</string>
+			<key>sourceColorRect</key>
+			<string>{{11, 20}, {60, 113}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_4_4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{393, 1}, {60, 114}}</string>
+			<key>offset</key>
+			<string>{-0.5, -3.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{11, 19}, {60, 114}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_4_5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{123, 131}, {60, 115}}</string>
+			<key>offset</key>
+			<string>{-0.5, -3}</string>
+			<key>sourceColorRect</key>
+			<string>{{11, 18}, {60, 115}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_5_1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{443, 131}, {49, 119}}</string>
+			<key>offset</key>
+			<string>{4, -2}</string>
+			<key>sourceColorRect</key>
+			<string>{{21, 15}, {49, 119}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_5_2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{149, 251}, {48, 127}}</string>
+			<key>offset</key>
+			<string>{4.5, 2}</string>
+			<key>sourceColorRect</key>
+			<string>{{22, 7}, {48, 127}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_5_3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{51, 251}, {48, 118}}</string>
+			<key>offset</key>
+			<string>{4.5, -1.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{22, 15}, {48, 118}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_5_4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{100, 251}, {48, 118}}</string>
+			<key>offset</key>
+			<string>{4.5, -1.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{22, 15}, {48, 118}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_5_5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 251}, {49, 119}}</string>
+			<key>offset</key>
+			<string>{4, -1}</string>
+			<key>sourceColorRect</key>
+			<string>{{21, 14}, {49, 119}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_6_1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{198, 251}, {36, 118}}</string>
+			<key>offset</key>
+			<string>{-2.5, -2.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{21, 16}, {36, 118}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_6_2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{271, 251}, {35, 117}}</string>
+			<key>offset</key>
+			<string>{-3, -3}</string>
+			<key>sourceColorRect</key>
+			<string>{{21, 17}, {35, 117}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_6_3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{335, 251}, {27, 115}}</string>
+			<key>offset</key>
+			<string>{1, -4}</string>
+			<key>sourceColorRect</key>
+			<string>{{29, 19}, {27, 115}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_6_4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{307, 251}, {27, 116}}</string>
+			<key>offset</key>
+			<string>{1, -3.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{29, 18}, {27, 116}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_6_5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{235, 251}, {35, 117}}</string>
+			<key>offset</key>
+			<string>{-3, -3}</string>
+			<key>sourceColorRect</key>
+			<string>{{21, 17}, {35, 117}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_7_1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{236, 131}, {51, 117}}</string>
+			<key>offset</key>
+			<string>{0, -5}</string>
+			<key>sourceColorRect</key>
+			<string>{{16, 19}, {51, 117}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_7_2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{340, 131}, {51, 117}}</string>
+			<key>offset</key>
+			<string>{0, -4}</string>
+			<key>sourceColorRect</key>
+			<string>{{16, 18}, {51, 117}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_7_3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{392, 131}, {50, 115}}</string>
+			<key>offset</key>
+			<string>{0.5, -5}</string>
+			<key>sourceColorRect</key>
+			<string>{{17, 20}, {50, 115}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_7_4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{288, 131}, {51, 115}}</string>
+			<key>offset</key>
+			<string>{0, -5}</string>
+			<key>sourceColorRect</key>
+			<string>{{16, 20}, {51, 115}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+		<key>standup_7_5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{184, 131}, {51, 116}}</string>
+			<key>offset</key>
+			<string>{0, -5.5}</string>
+			<key>sourceColorRect</key>
+			<string>{{16, 20}, {51, 116}}</string>
+			<key>sourceSize</key>
+			<string>{83, 145}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>1</integer>
+		<key>size</key>
+		<string>{512, 512}</string>
+	</dict>
+</dict>
+</plist>

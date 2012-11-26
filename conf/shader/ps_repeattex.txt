@@ -1,0 +1,57 @@
+//
+// File: ps_repeattex.txt
+//
+
+// Desc: Pixel shader that does part of texture repeating.
+//
+
+//
+// Globals
+//
+
+float Umin;
+float Umax;
+float Vmin;
+float Vmax;
+
+texture MyTexture;
+
+//
+// Structures
+//
+sampler MySampler = 
+sampler_state 
+{ 
+	Texture = <MyTexture>;
+	Filter = None;
+	AddressU = Clamp;
+	AddressV = Clamp;
+};
+
+struct PS_INPUT
+{
+     float4 Position   : TEXCOORD0;
+};
+
+struct PS_OUTPUT
+{
+     vector finalPixelColor : COLOR0;
+};
+
+//
+// Main
+//
+PS_OUTPUT Main(PS_INPUT input) : COLOR0
+{	 
+     // zero out members of output
+     PS_OUTPUT output = (PS_OUTPUT)0;
+	 
+	 // U = fmod(U, U2-U1) + U1 
+	 // V = fmod(V, V2-V1) + V1 
+	 output.finalPixelColor = tex2D(MySampler, float2(
+	      fmod(input.Position.x, Umax - Umin) + Umin,
+		  fmod(input.Position.y, Vmax - Vmin) + Vmin
+     ));
+	 
+     return output;
+}

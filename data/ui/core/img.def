@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tag name="img" baseTag="none">
+	
+	<attr name="id" />
+	<attr name="class" />
+	
+	<css name="width" />
+	<css name="height" />
+	
+	<css name="file" />
+	
+	<css name="position" />
+	
+	<css name="margin-top" />
+	<css name="margin-left" />
+	<css name="margin-right" />
+	<css name="margin-bottom" />
+	
+	<css name="border-top" />
+	<css name="border-left" />
+	<css name="border-right" />
+	<css name="border-bottom" />
+	
+	<css name="padding-top" />
+	<css name="padding-left" />
+	<css name="padding-right" />
+	<css name="padding-bottom" />
+	
+	<css name="display" default="block" />
+</tag>

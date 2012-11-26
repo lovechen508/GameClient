@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tag name="checkbox" baseTag="none" status="hover,click,disable" toggle="true">
+	
+	<attr name="id" />
+	<attr name="class" />
+	
+	<css name="width" />
+	<css name="height" />
+
+	<css name="checkbox-unchecked" />
+	<css name="checkbox-checked" />
+
+	<css name="font-color" />
+	<css name="font-size" />
+	<css name="font-weight" />
+	<css name="font-family" />
+	<css name="font-letter-spacing" />
+	<css name="font-stroke-color" />
+
+	<css name="text-indent" />
+	<css name="text-align" />
+	<css name="text-decoration" />
+</tag>

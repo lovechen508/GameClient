@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	
+	<!--
+		文件名必须是 ${name}_${version}.xml
+		模块下载完毕，自动解压到/conf/modules/目录
+		客户端启动后自动到该目录加载已下载模块
+		
+		模块间依赖必须是有向无环，不能出现循环依赖
+	-->
+	
+	<!--
+		元数据信息区：模块名称，模块版本
+			注：模块版本存储为integer, 所以必须是数值
+	-->
+	<name>core</name>
+	<version>1<version>
+	
+	<!--
+		模块依赖描述：模块在加载前必须保证依赖模块已经被正确加载
+		此过程在模块下载结束后立即检查，实现自动依赖下载
+	-->
+	<dependencies>
+		<module name="" version="" />
+	</dependencies>
+	
+	<!--
+		模块加载流程声明:preload, load, postload
+		可以在preload中执行一些依赖检查，环境检查等
+		在load中执行模块的真正加载动作，如加载自定义层，加载新窗口界面，Lua脚本资源，注册新数据模型等
+		然后在postload中执行一些加载后的校验工作，确保模块加载成功
+	-->
+	<install>
+		<preload>
+		</preload>
+		
+		<load>
+		</load>
+		
+		<postload>
+		</postload>
+	</install>
+	
+	<!--
+		模块卸载流程声明:preunload, unload, postunload
+		可以在preunload中执行一些依赖检查，环境检查等
+		在unload中执行模块的真正加载动作，如加载自定义层，加载新窗口界面等
+		然后在postunload中执行一些卸载后的清理工作，确保模块卸载成功
+	-->
+	<uninstall>
+		<preunload>
+		</preunload>
+		
+		<unload>
+		</unload>
+		
+		<postunload>
+		</postunload>		
+	</uninstall>
+</module>
