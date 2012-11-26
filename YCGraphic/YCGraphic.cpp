@@ -1324,6 +1324,26 @@ YCGraphic::YCFont::~YCFont()
 }
 
 //
+// 函数：setAutoScaled(bool autoScaled)
+//
+// 目的：设置自动缩放
+//
+void YCGraphic::YCFont::setAutoScaled(bool autoScaled)
+{
+
+}
+
+//
+// 函数：isAutoScaled()
+//
+// 目的：是否自动缩放
+//
+bool YCGraphic::YCFont::isAutoScaled() const
+{
+    return false;
+}
+
+//
 // 函数：getFontWidthAndHeight(E_FONT_TYPE type, E_FONT_DIRECTION direction, unsigned int size, const char* strInfo, int& width, int& height)
 //
 // 目的：取得特定字体及大小下面高和宽
