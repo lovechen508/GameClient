@@ -18,7 +18,7 @@ YCBuffManager::~YCBuffManager(void)
 //
 bool YCBuffManager::initialize(YCConfig& config)
 {
-
+	return true;
 }
 
 //

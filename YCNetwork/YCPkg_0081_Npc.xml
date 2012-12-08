@@ -2,13 +2,31 @@
 
   <!--
       NPC 交互协议定义文件
+            
+      NPC 交互说明：
+      
+            Client                                    Server
+          
+                           GSMSG_TALKNPC_REQ
+         玩家点击NPC       ==================>
+
+                           GSMSG_TALKNPC_NTF
+                          <==================
+                        
+                         GSMSG_NPCSELECTION_REQ
+    玩家选择Server_cmd   =======================>
   -->
 
 <package>
-  <request>
-
+  <request id="81" msg="GSMSG_TALKNPC_REQ">
+      
   </request>
-  <response>
+  
+  <response id="82" msg="GSMSG_TALKNPC_NTF">
 
   </response>
+  
+  <request id="83" msg="GSMSG_NPCSELECTION_REQ">
+    
+  </request>
 </package>

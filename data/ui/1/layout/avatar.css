@@ -1,11 +1,11 @@
 window 
 {
-	width:277;
+	width:477;
 	height:343;
 	top:HALF_SCREEN_HEIGHT;
 	left:HALF_SCREEN_WIDTH;
 --	background-color:0x00FF00;
---	background-image:4\09.png;
+	background-image:4\09.png;
 
 	background-top-left:4\00.png;
 	background-top:4\01.png;	

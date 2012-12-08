@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     离开场景，跳场景交互协议定义文件
+  -->
+
+<package>
+  <request>
+
+  </request>
+  <response>
+
+  </response>
+</package>
