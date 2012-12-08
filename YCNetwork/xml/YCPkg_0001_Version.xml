@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  
+  <!--
+    服务器和客户端的版本交互协议
+  -->
+
+  <request id="1" msg="GSPKG_VERSION_RPT">
+    <item name="version" type="unsigned int" />
+    <!-- Client版本号 -->
+  </request>
+
+  <response id="2" msg="GSPKG_VERSION_NTF">
+    <item name="GGVersion" type="unsigned int" />
+    <!-- GameGate版本号 -->
+    <item name="GSVersion" type="unsigned int" />
+    <!-- GameServer版本号 -->
+  </response>
+  
+</package>

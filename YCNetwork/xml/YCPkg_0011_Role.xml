@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <!--
+    Role 操作交互协议
+  -->
+
+  <!-- 角色列表 -->
+  <response id="0011" msg="GSPKG_ROLELIST_NTF">
+    
+  </response>
+
+  <!-- 创建角色 -->
+  <request id="0012" msg="">
+    
+  </request>
+  <response id="0013" msg="">
+    
+  </response>
+
+  <!-- 选择角色 -->
+  <request id="0014" msg="">
+
+  </request>
+  <response id="0015" msg="">
+
+  </response>
+  
+  <!-- 删除角色 -->
+  <request id="0016" msg="">
+
+  </request>
+  <response id="0017" msg="">
+
+  </response>
+  
+  <!-- 恢复角色 -->
+  <request id="0018" msg="">
+
+  </request>
+  <response id="0019" msg="">
+
+  </response>
+
+  <!-- 永久删除角色 -->
+  <request id="0020" msg="">
+
+  </request>
+  <response id="0021" msg="">
+
+  </response>
+  
+</package>

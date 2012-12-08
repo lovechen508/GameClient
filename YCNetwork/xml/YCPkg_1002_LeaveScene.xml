@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+  <!--
+     离开场景，跳场景交互协议定义文件
+  -->
+
+  <request id="1002" name="GSMSG_LEAVEGAME_REQ">
+    <item name="byType" type="unsigned char" />
+  </request>
+  <response id="1003" name="GSMSG_LEAVEGAME_NTF">
+    <item name="nErrCode" type="int" />
+    <item name="byType" type="unsigned char" />
+  </response>
+</package>

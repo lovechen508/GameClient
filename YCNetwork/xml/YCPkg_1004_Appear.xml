@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+  <!--      
+      玩家，NPC，Monster，Item，特效进入场景服务器单向消息协议定义文件
+  -->
+
+  <defines>
+    <define name="GS_MAPNAME_LEN" value="64" />
+  </defines>
+
+  <internel>
+    <!-- 玩家基本信息 -->
+    <type name="ROLE_BASIC_INFO">
+      
+    </type>
+    <!-- 玩家附加信息 -->
+    <type name="ROLE_ADDITION_INFO">
+      
+    </type>
+  </internel>
+  
+  <!-- 主玩家信息 -->
+  <response id="1004" msg="GSPKG_ROLEMAINDATA_NTF">
+    <item name="basic" type="ROLE_BASIC_INFO" />
+    <item name="addition" type="ROLE_ADDITION_INFO" />
+  </response>
+  <response id="1005" msg="GSPKG_ROLEPOSITION_NTF">
+    <item name="wMapCode" type="unsigned short" />
+    <item name="szMapName" type="string" count="GS_MAPNAME_LEN" />
+    <item name="x" type="unsigned short" />
+    <item name="y" type="unsigned short" />
+    <item name="byDirection" type="unsigned char" />
+  </response>
+  
+  <!-- 其他玩家出现 -->
+  <response id="1006" msg="GSPKG_ROLEAPPEAR_NTF">
+    <item name="basic" type="ROLE_BASIC_INFO" />
+  </response>
+  
+  <response id="1007" msg="GSPKG_MONSTERAPPEAR_NTF">
+    
+  </response>
+  <response id="1008" msg="GSPKG_NPCAPPEAR_NTF">
+    
+  </response>
+  <response id="1009" msg="GSPKG_ITEMAPPEAR_NTF">
+    
+  </response>
+  <response id="1010" msg="GSPKG_MAGICAPPEAR_NTF">
+    
+  </response>
+
+  <response id="1011" msg="GSPKG_OBJECTDISAPPEAR_NTF">
+    
+  </response>
+  
+</package>

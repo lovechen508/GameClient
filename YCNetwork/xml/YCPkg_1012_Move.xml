@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  
+  <!--
+    移动消息定义文件
+  -->
+
+  <request id="1012" msg="GSPKG_MOVE_REQ">
+    <item name="byType" type="unsigned char" />
+    <!-- 移动类型 -->
+    <item name="byDirection" type="unsigned char" />
+    <!-- 移动方向 -->
+  </request>
+  <response id="1013" msg="GSPKG_MOVE_ACK">
+    <item name="nErrCode" type="int" />
+    <!-- 错误码 -->
+    <item name="byType" type="unsigned char" />
+    <!-- 移动类型 -->
+    <item name="x" type="unsigned short" />
+    <item name="y" type="unsigned short" />
+  </response>
+  
+</package>

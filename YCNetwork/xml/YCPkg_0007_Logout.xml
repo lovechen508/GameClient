@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+
+  <request id="7" msg="GGPKG_LOGOUT_REQ">
+
+  </request>
+  <response id="8" msg="GGPKG_LOGOUT_ACK">
+
+  </response>
+  
+</package>

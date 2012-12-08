@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<package>
 
   <!--
       Login 登录交互协议定义文件
 
   -->
 
-<package>
-  <request>
+  <request id="5" msg="GGPKG_LOGIN_REQ">
     
   </request>
-  <response>
+  <response id="6" msg="GGPKG_LOGIN_ACK">
     
   </response>
+  
 </package>

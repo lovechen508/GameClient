@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+  <!--
+    服务器和客户端的通用错误交互协议
+  -->
+
+  <request id="3" msg="GSPKG_ERROR_RPT">
+    <item name="nErrCode" type="int" />
+    <!-- 系统错误码 -->
+  </request>
+
+  <response id="4" msg="GSPKG_ERROR_NTF">
+    <item name="nErrCode" type="int" />
+    <!-- 系统错误码 -->
+    <item name="szErrMsg" type="string" count="255" />
+    <!-- 系统错误描述信息 -->
+  </response>
+
+</package>
