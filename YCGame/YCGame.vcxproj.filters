@@ -130,6 +130,12 @@
     <Filter Include="源文件\Model\Buff">
       <UniqueIdentifier>{1d5c80ee-b3dd-4681-9bd5-4faa117ba03e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Model\Tips">
+      <UniqueIdentifier>{73336ad5-063b-45d2-a86a-06b7319a014a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Model\Tips">
+      <UniqueIdentifier>{d6b6ac80-2059-4f2f-accb-a22197fc74c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="YCGame.cpp">
@@ -284,6 +290,9 @@
     </ClCompile>
     <ClCompile Include="YCBuffManager.cpp">
       <Filter>源文件\Model\Buff</Filter>
+    </ClCompile>
+    <ClCompile Include="YCTips.cpp">
+      <Filter>源文件\Model\Tips</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -457,6 +466,9 @@
     </ClInclude>
     <ClInclude Include="YCBuffManager.h">
       <Filter>头文件\Model\Buff</Filter>
+    </ClInclude>
+    <ClInclude Include="YCTips.h">
+      <Filter>头文件\Model\Tips</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

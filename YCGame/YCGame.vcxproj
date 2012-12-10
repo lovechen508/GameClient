@@ -218,6 +218,7 @@ copy ..\bin\YC_Game.dll ..\..\Distribute\release\bin</Command>
     <ClCompile Include="YCTiledMapTile.cpp" />
     <ClCompile Include="YCTiledTexture.cpp" />
     <ClCompile Include="YCTileSet.cpp" />
+    <ClCompile Include="YCTips.cpp" />
     <ClCompile Include="YCZipModule.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -277,6 +278,7 @@ copy ..\bin\YC_Game.dll ..\..\Distribute\release\bin</Command>
     <ClInclude Include="YCTiledMapTile.h" />
     <ClInclude Include="YCTiledTexture.h" />
     <ClInclude Include="YCTileSet.h" />
+    <ClInclude Include="YCTips.h" />
     <ClInclude Include="YCZipModule.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

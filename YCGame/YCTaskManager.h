@@ -41,6 +41,12 @@ public:
 	//
 	void finalize();
 
+private:
+
+    //
+    //
+    //
+
 };
 
 #endif

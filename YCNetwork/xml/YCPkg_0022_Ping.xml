@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+
+  <request id="22" msg="GGPKG_PINT_REQ">
+    
+  </request>
+  <response id="23" msg="GGPKG_PING_ACK">
+    
+  </response>
+  
+</package>

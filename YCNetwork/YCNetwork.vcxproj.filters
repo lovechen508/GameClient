@@ -31,16 +31,40 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
+    <None Include="xml\YCPkg_0001_Version.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
+    <None Include="xml\YCPkg_0003_Error.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
     <None Include="xml\YCPkg_0005_Login.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
+    <None Include="xml\YCPkg_0007_Logout.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
+    <None Include="xml\YCPkg_0011_Role.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
+    <None Include="xml\YCPkg_0080_Chat.xml">
       <Filter>头文件\Protocol\Xml</Filter>
     </None>
     <None Include="xml\YCPkg_1000_EnterScene.xml">
       <Filter>头文件\Protocol\Xml</Filter>
     </None>
-    <None Include="YCPkg_0080_Chat.xml">
+    <None Include="xml\YCPkg_1002_LeaveScene.xml">
       <Filter>头文件\Protocol\Xml</Filter>
     </None>
-    <None Include="YCPkg_0081_Npc.xml">
+    <None Include="xml\YCPkg_1004_Appear.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
+    <None Include="xml\YCPkg_1012_Move.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
+    <None Include="xml\YCPkg_0090_Npc.xml">
+      <Filter>头文件\Protocol\Xml</Filter>
+    </None>
+    <None Include="xml\YCPkg_0022_Ping.xml">
       <Filter>头文件\Protocol\Xml</Filter>
     </None>
   </ItemGroup>

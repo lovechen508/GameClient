@@ -169,10 +169,18 @@ copy ..\bin\YC_Network.dll ..\..\Distribute\release\bin</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
+    <None Include="xml\YCPkg_0022_Ping.xml" />
+    <None Include="xml\YCPkg_0001_Version.xml" />
+    <None Include="xml\YCPkg_0003_Error.xml" />
     <None Include="xml\YCPkg_0005_Login.xml" />
+    <None Include="xml\YCPkg_0007_Logout.xml" />
+    <None Include="xml\YCPkg_0011_Role.xml" />
+    <None Include="xml\YCPkg_0080_Chat.xml" />
+    <None Include="xml\YCPkg_0090_Npc.xml" />
     <None Include="xml\YCPkg_1000_EnterScene.xml" />
-    <None Include="YCPkg_0080_Chat.xml" />
-    <None Include="YCPkg_0081_Npc.xml" />
+    <None Include="xml\YCPkg_1002_LeaveScene.xml" />
+    <None Include="xml\YCPkg_1004_Appear.xml" />
+    <None Include="xml\YCPkg_1012_Move.xml" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="YCDataHolder.cpp" />
