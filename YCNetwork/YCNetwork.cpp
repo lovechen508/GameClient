@@ -199,7 +199,8 @@ void YCNetwork::post(unsigned short msgId, YCIPackageRequest* request)
 
 	char buf[BUFFER_SIZE];
 	unsigned int len = BUFFER_SIZE;
-	if (myEncoders[msgId](request, buf, len))
+	YCDataHolder holder(buf, len);
+	if (myEncoders[msgId](request, &holder))
 	{
 		throw YCException(2002, "YCNetwork::post封包函数处理失败", msgId);
 	}

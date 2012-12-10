@@ -1,6 +1,8 @@
 #ifndef _INCLUDE_YCMSGDEFINE_H_
 #define _INCLUDE_YCMSGDEFINE_H_
 
+#include "YCDataHolder.h"
+
 #include "YCIPackageRequest.h"
 #include "YCIPackageResponse.h"
 
@@ -11,7 +13,7 @@
 //
 #define BUFFER_SIZE 10240
 
-typedef bool (*ENCODE)(YCIPackageRequest*, char*, unsigned int);
-typedef bool (*DECODE)(YCIPackageResponse*, char*, unsigned int);
+typedef bool (*ENCODE)(YCIPackageRequest*, YCDataHolder*);
+typedef bool (*DECODE)(YCIPackageResponse*, YCDataHolder*);
 
 #endif

@@ -3,13 +3,17 @@
 
   <!--
       主玩家进入场景，跳场景交互协议定义文件
-  -->
+  -->	
+  <includes>
+	<include file="YCPkg_1004_Appear.h" />
+  </includes>
   
   <request id="1000" msg="GSMSG_ENTERGAME_REQ">
-    <item name="szRolename" type="string" count="" />
+    <item name="szRolename" type="string" count="ROLE_NAME_LEN" />
     <item name="sessionId" type="unsigned long long" />
     <item name="dwFlags" type="unsigned int" />
   </request>
+  
   <response id="1001" msg="GSMSG_ENTERGAME_NTF">
     <item name="nErrCode" type="int" />
     <item name="dwFlags" type="unsigned int" />

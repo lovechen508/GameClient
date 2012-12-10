@@ -2,6 +2,7 @@
 #define _INCLUDE_YCNETWORKCALLBACKHELPER_H_
 
 #include "YCINetworkCallback.h"
+#include "YCDataHolder.h"
 
 template<typename T, typename P>
 class YCDecodeHelper : public YCINetworkCallback
@@ -23,8 +24,9 @@ public:
 	void handle(char* data, unsigned int len)
 	{
 		Package pkg;
+		YCDataHolder holder(data, len);
 
-		if (myDecoder(&pkg, data, len))
+		if (myDecoder(&pkg, &holder))
 		{
 			myDelegate->handle(pkg);
 		}

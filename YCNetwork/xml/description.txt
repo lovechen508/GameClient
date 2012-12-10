@@ -1,0 +1,81 @@
+==== 协议转换说明 ====
+
+																						#ifndef _INCLUDE_FILE_H_
+																						#define _INCLUDE_FILE_H_
+													   
+<includes>
+	<include file="YCPkg_1004_Appear.h" />              				=> 				#include "YCPkg_1004_Appear.h"
+</includes>
+
+<defines>
+	<define name="ROLE_NAME_LEN" value="64" />							=>				#define ROLE_NAME_LEN 64
+</defines>
+
+<internal>
+	<type name="ROLE_BASIC_INFO">										=>				struct ROLE_BASIC_INFO {
+		<item name="roleName" type="string" count="ROLE_NAME_LEN" />						char 			roleName[ROLE_NAME_LEN];
+		<item name="objectId" type="unsigned int" />										unsigned int	objectId;
+		<item name="level" type="unsigned short" />											unsigned short	level;
+		<item name="direction" type="unsigned char" />										unsigned char	direction;
+		<item name="x" type="unsigned short" />												unsigned short	x;
+		<item name="y" type="unsigned short" />												unsigned short	y;
+		<item name="career" type="unsigned char" />											unsigned char	career;
+		<item name="sex" type="unsigned char" />											unsigned char	sex;
+    </type>                                                                             };
+</internal>																		
+																		=> *.h 			static int Encode_ROLE_BASIC_INFO(void* netData, YCDataHolder* host);                  
+																		=> *.cpp		int Encode_ROLE_BASIC_INFO(void* netData, YCDataHolder* host)
+																		                {
+																						}
+																						
+																		=> *.h 			static int Decode_ROLE_BASIC_INFO(void* netData, YCDataHolder* host);                  
+																		=> *.cpp		int Decode_ROLE_BASIC_INFO(void* netData, YCDataHolder* host)
+																		                {
+																						}
+
+
+<request id="1000" msg="GSMSG_ENTERGAME_REQ">
+	<item name="szRolename" type="string" count="ROLE_NAME_LEN" />		=>		`		struct GSMEG_ENTERGAME_REQ {			
+	<item name="sessionId" type="unsigned long long" />										unsigned long long 	sessionId;
+	<item name="dwFlags" type="unsigned int" />												unsigned int 		dwFlags;
+	<item name="basicInfo" type="ROLE_BASIC_INFO" />										ROLE_BASIC_INFO 	basicInfo;
+</request>		
+																		=> *.h 			static int Encode_GSMSG_ENTERGAME_REQ(void* netData, YCDataHolder* host);                  
+																		=> *.cpp		int Encode_GSMSG_ENTERGAME_REQ(void* netData, YCDataHolder* host)
+																		                {
+																						}
+																						
+																		=> *.h 			static int Decode_GSMSG_ENTERGAME_REQ(void* netData, YCDataHolder* host);                  
+																		=> *.cpp		int Decode_GSMSG_ENTERGAME_REQ(void* netData, YCDataHolder* host)
+																		                {
+																						}
+
+
+<response id="1001" msg="GSMSG_ENTERGAME_NTF">							=>				struct GSMSG_ENTERGAME_NTF {
+	<item name="nErrCode" type="int" />														int 				nErrCode;
+	<item name="dwFlags" type="unsigned int" />												unsigned int		dwFlags;
+</response>																				};
+																		
+																		=> *.h 			static int Encode_GSMSG_ENTERGAME_NTF(void* netData, YCDataHolder* host);                  
+																		=> *.cpp		int Encode_GSMSG_ENTERGAME_NTF(void* netData, YCDataHolder* host)
+																		                {
+																						}
+																						
+																		=> *.h 			static int Decode_GSMSG_ENTERGAME_NTF(void* netData, YCDataHolder* host);                  
+																		=> *.cpp		int Decode_GSMSG_ENTERGAME_NTF(void* netData, YCDataHolder* host)
+																		                {
+																						}
+																						
+																		=> *.h			static void initialize(YCNetwork* network);
+																		   *.cpp		void initialize(YCNetwork* network)
+																		                {
+																							if (network == NULL)
+																							{
+																								throw YCException(2002, "initialize protocol时network为NULL");
+																							}
+																							
+																							network->registry(1000, Encode_GSMSG_ENTERGAME_REQ, Decode_GSMSG_ENTERGAME_REQ);
+																							network->registry(1001, Encode_GSMSG_ENTERGAME_NTF, Decode_GSMSG_ENTERGAME_NTF);
+																						}
+																						
+																						#endif

@@ -27,7 +27,18 @@ class YCINetworkCallback;
  *             统一通过YCInput派发
  *             UINT message  ：WM_NETWORK_MSG 
  *             WPARAM wParam ：socket
- *             LPARAM lParam ：error
+ *             LPARAM lParam ：error                                      
+ *                                                                                    
+ *                                           | | | | | | | | |                         
+ *                                           YCINetworkListener                       
+ *                                                    ^                               | 1. decrypt(buf, len, buf, len)
+ *                                    YCNetwork::handleInPackage(buf, len)     ---->  | 
+ *                                                    ^                               | 2. decode(Package* pkg, YCDataHolder* holder)
+ *                                             YCLink:onMessage                       
+ *                                                    ^                               
+ *                                            YCInput::Listener                       
+ *                                                    ^                               
+ *                                    AsyncSocket ready -> WM_NETWORK_MSG   
  */
 class YCAPI YCNetwork
 {
@@ -126,7 +137,7 @@ public:
 	//
 	// 目的：注册解包，封包函数对
 	//
-	void registry(unsigned int msgId, ENCODE encode, DECODE decode);
+	void registry_encode(unsigned int msgId, ENCODE encode, DECODE decode);
 
 	//
 	// 函数：finalize()
@@ -148,6 +159,9 @@ private:
 	ENCODE myEncoders[MAX_PROTOCOL];
 	DECODE myDecoders[MAX_PROTOCOL];
 
+	//
+	// 实际上是YCDecodeHelper, 持有生命周期
+	//
 	YCINetworkCallback *myCallbacks[MAX_PROTOCOL];
 };
 

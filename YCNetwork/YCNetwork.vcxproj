@@ -169,7 +169,9 @@ copy ..\bin\YC_Network.dll ..\..\Distribute\release\bin</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
-    <None Include="xml\YCPkg_0022_Ping.xml" />
+    <None Include="xml\YCPkg_0022_Ping.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="xml\YCPkg_0001_Version.xml" />
     <None Include="xml\YCPkg_0003_Error.xml" />
     <None Include="xml\YCPkg_0005_Login.xml" />

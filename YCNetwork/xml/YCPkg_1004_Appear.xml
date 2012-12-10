@@ -7,16 +7,26 @@
 
   <defines>
     <define name="GS_MAPNAME_LEN" value="64" />
+	<define name="ROLE_NAME_LEN" value="64" />
   </defines>
 
   <internel>
     <!-- 玩家基本信息 -->
     <type name="ROLE_BASIC_INFO">
-      
+      <item name="roleName" type="string" count="ROLE_NAME_LEN" />
+	  <item name="objectId" type="unsigned int" />
+	  <item name="level" type="unsigned short" />
+	  <item name="direction" type="unsigned char" />
+	  <item name="x" type="unsigned short" />
+	  <item name="y" type="unsigned short" />
+	  <item name="career" type="unsigned char" />
+	  <item name="sex" type="unsigned char" />
     </type>
     <!-- 玩家附加信息 -->
     <type name="ROLE_ADDITION_INFO">
-      
+      <item name="portrait" type="unsigned char" />
+	  <item name="hairType" type="unsigned char" />
+	  <item name="helmId" type="unsigned short" />
     </type>
   </internel>
   

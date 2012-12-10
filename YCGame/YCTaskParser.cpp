@@ -228,7 +228,7 @@ public:
 
 				bool equalFound = false; // =
 
-				for (char* i = buffer; i != '\0'; ++i)
+				for (char* i = buffer; *i != '\0'; ++i)
 				{
 					if (*i == '\n') break;
 
@@ -288,10 +288,10 @@ public:
 						}
 						else if (!cmdFound)
 						{
-							if (*(i+1) == '\0')
-							{
-								throw YCException(1002, "nextCommand无效NPC选项", buffer);
-							}
+							//if (*(i+1) == '\0')
+							//{
+							//	throw YCException(1002, "nextCommand无效NPC选项", buffer);
+							//}
 
 							if (cmd == NULL)
 							{

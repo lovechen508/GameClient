@@ -1,6 +1,0 @@
-#ifndef _INCLUDE_YCPKG_1000_ENTERSCENE_H_
-#define _INCLUDE_YCPKG_1000_ENTERSCENE_H_
-
-
-
-#endif
