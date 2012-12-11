@@ -31,17 +31,11 @@ template<> struct YCType2Int<GSMSG_TALKNPC_REQ>{enum{id=81};};
 template<> struct YCType2Int<GSMSG_NPCSELECTION_REQ>{enum{id=83};};
 template<> struct YCType2Int<GSMSG_TALKNPC_NTF>{enum{id=82};};
 
-static int Encode_GSMSG_TALKNPC_REQ(void* host, YCDataHolder* holder);
-static int Decode_GSMSG_TALKNPC_REQ(void* host, YCDataHolder* holder);
-static int Encode_GSMSG_NPCSELECTION_REQ(void* host, YCDataHolder* holder);
-static int Decode_GSMSG_NPCSELECTION_REQ(void* host, YCDataHolder* holder);
-static int Encode_GSMSG_TALKNPC_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSMSG_TALKNPC_NTF(void* host, YCDataHolder* holder);
 
 
 /////////////////////////////////////////////////////////
 // YCPkg_0090_Npc 初始化函数声明
 /////////////////////////////////////////////////////////
-static void YCPkg_0090_Npc_init(YCNetwork* network);
+void YCPkg_0090_Npc_init(YCNetwork* network);
 
 #endif

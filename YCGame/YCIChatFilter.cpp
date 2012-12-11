@@ -5,7 +5,7 @@
 #include "YCBasic\YCAssert.h"
 #include "YCBasic\YCException.h"
 
-#include "YCNetwork\YCPkg_0080_Chat.h"
+#include "YCNetwork\protocol\YCPkg_0080_Chat.h"
 
 YCIChatFilter::YCIChatFilter(unsigned int id, YCIChatFilter* next)
 	: myNext(next)

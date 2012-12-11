@@ -14,6 +14,6 @@ class YCDataHolder;
 /////////////////////////////////////////////////////////
 // YCPkg_0080_Chat 初始化函数声明
 /////////////////////////////////////////////////////////
-static void YCPkg_0080_Chat_init(YCNetwork* network);
+void YCPkg_0080_Chat_init(YCNetwork* network);
 
 #endif

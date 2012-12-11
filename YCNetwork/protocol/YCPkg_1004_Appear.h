@@ -77,27 +77,11 @@ template<> struct YCType2Int<GSPKG_ITEMAPPEAR_NTF>{enum{id=1009};};
 template<> struct YCType2Int<GSPKG_MAGICAPPEAR_NTF>{enum{id=1010};};
 template<> struct YCType2Int<GSPKG_OBJECTDISAPPEAR_NTF>{enum{id=1011};};
 
-static int Encode_GSPKG_ROLEMAINDATA_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_ROLEMAINDATA_NTF(void* host, YCDataHolder* holder);
-static int Encode_GSPKG_ROLEPOSITION_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_ROLEPOSITION_NTF(void* host, YCDataHolder* holder);
-static int Encode_GSPKG_ROLEAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_ROLEAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Encode_GSPKG_MONSTERAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_MONSTERAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Encode_GSPKG_NPCAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_NPCAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Encode_GSPKG_ITEMAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_ITEMAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Encode_GSPKG_MAGICAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_MAGICAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Encode_GSPKG_OBJECTDISAPPEAR_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSPKG_OBJECTDISAPPEAR_NTF(void* host, YCDataHolder* holder);
 
 
 /////////////////////////////////////////////////////////
 // YCPkg_1004_Appear 初始化函数声明
 /////////////////////////////////////////////////////////
-static void YCPkg_1004_Appear_init(YCNetwork* network);
+void YCPkg_1004_Appear_init(YCNetwork* network);
 
 #endif

@@ -22,15 +22,11 @@ typedef struct GSMSG_LEAVEGAME_NTF {
 template<> struct YCType2Int<GSMSG_LEAVEGAME_REQ>{enum{id=1002};};
 template<> struct YCType2Int<GSMSG_LEAVEGAME_NTF>{enum{id=1003};};
 
-static int Encode_GSMSG_LEAVEGAME_REQ(void* host, YCDataHolder* holder);
-static int Decode_GSMSG_LEAVEGAME_REQ(void* host, YCDataHolder* holder);
-static int Encode_GSMSG_LEAVEGAME_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSMSG_LEAVEGAME_NTF(void* host, YCDataHolder* holder);
 
 
 /////////////////////////////////////////////////////////
 // YCPkg_1002_LeaveScene 初始化函数声明
 /////////////////////////////////////////////////////////
-static void YCPkg_1002_LeaveScene_init(YCNetwork* network);
+void YCPkg_1002_LeaveScene_init(YCNetwork* network);
 
 #endif

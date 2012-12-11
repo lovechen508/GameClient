@@ -3,7 +3,7 @@
 #include "..\YCNetwork.h"
 #include "..\YCDataHolder.h"
 
-int Encode_ROLE_BASIC_INFO(void* host, YCDataHolder* holder)
+static int Encode_ROLE_BASIC_INFO(void* host, YCDataHolder* holder)
 {
 	ROLE_BASIC_INFO* pkg = (ROLE_BASIC_INFO*)host;
 	if (-1 == holder->addString(pkg->roleName, ROLE_NAME_LEN)) {
@@ -32,7 +32,7 @@ int Encode_ROLE_BASIC_INFO(void* host, YCDataHolder* holder)
 	}
 	return holder->getPosition();
 }
-int Encode_ROLE_ADDITION_INFO(void* host, YCDataHolder* holder)
+static int Encode_ROLE_ADDITION_INFO(void* host, YCDataHolder* holder)
 {
 	ROLE_ADDITION_INFO* pkg = (ROLE_ADDITION_INFO*)host;
 	if (-1 == holder->addByte(pkg->portrait)) {
@@ -114,7 +114,7 @@ int Encode_GSPKG_OBJECTDISAPPEAR_NTF(void* host, YCDataHolder* holder)
 	return holder->getPosition();
 }
 
-int Decode_ROLE_BASIC_INFO(void* host, YCDataHolder* holder)
+static int Decode_ROLE_BASIC_INFO(void* host, YCDataHolder* holder)
 {
 	ROLE_BASIC_INFO* pkg = (ROLE_BASIC_INFO*)host;
 	if (-1 == holder->delString(pkg->roleName, ROLE_NAME_LEN)) {
@@ -143,7 +143,7 @@ int Decode_ROLE_BASIC_INFO(void* host, YCDataHolder* holder)
 	}
 	return holder->getPosition();
 }
-int Decode_ROLE_ADDITION_INFO(void* host, YCDataHolder* holder)
+static int Decode_ROLE_ADDITION_INFO(void* host, YCDataHolder* holder)
 {
 	ROLE_ADDITION_INFO* pkg = (ROLE_ADDITION_INFO*)host;
 	if (-1 == holder->delByte(pkg->portrait)) {

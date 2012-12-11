@@ -26,15 +26,11 @@ typedef struct GSMSG_ENTERGAME_NTF {
 template<> struct YCType2Int<GSMSG_ENTERGAME_REQ>{enum{id=1000};};
 template<> struct YCType2Int<GSMSG_ENTERGAME_NTF>{enum{id=1001};};
 
-static int Encode_GSMSG_ENTERGAME_REQ(void* host, YCDataHolder* holder);
-static int Decode_GSMSG_ENTERGAME_REQ(void* host, YCDataHolder* holder);
-static int Encode_GSMSG_ENTERGAME_NTF(void* host, YCDataHolder* holder);
-static int Decode_GSMSG_ENTERGAME_NTF(void* host, YCDataHolder* holder);
 
 
 /////////////////////////////////////////////////////////
 // YCPkg_1000_EnterScene 初始化函数声明
 /////////////////////////////////////////////////////////
-static void YCPkg_1000_EnterScene_init(YCNetwork* network);
+void YCPkg_1000_EnterScene_init(YCNetwork* network);
 
 #endif

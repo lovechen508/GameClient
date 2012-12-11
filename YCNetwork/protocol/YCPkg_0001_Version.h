@@ -22,15 +22,11 @@ typedef struct GGPKG_VERSION_NTF {
 template<> struct YCType2Int<GGPKG_VERSION_RPT>{enum{id=1};};
 template<> struct YCType2Int<GGPKG_VERSION_NTF>{enum{id=2};};
 
-static int Encode_GGPKG_VERSION_RPT(void* host, YCDataHolder* holder);
-static int Decode_GGPKG_VERSION_RPT(void* host, YCDataHolder* holder);
-static int Encode_GGPKG_VERSION_NTF(void* host, YCDataHolder* holder);
-static int Decode_GGPKG_VERSION_NTF(void* host, YCDataHolder* holder);
 
 
 /////////////////////////////////////////////////////////
 // YCPkg_0001_Version 初始化函数声明
 /////////////////////////////////////////////////////////
-static void YCPkg_0001_Version_init(YCNetwork* network);
+void YCPkg_0001_Version_init(YCNetwork* network);
 
 #endif

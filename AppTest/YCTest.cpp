@@ -3,7 +3,7 @@
 
 #include "YCGame\YCTaskParser.h"
 #include "YCGame\YCTaskMessage.h"
-#include "YCNetwork\YCPkg_0090_Npc.h"
+#include "YCNetwork\protocol\YCPkg_0090_Npc.h"
 
 #include "YCBasic\YCFileUtil.h"
 #include "YCBasic\YCException.h"
@@ -28,7 +28,7 @@ void YCTest::test()
 // 测试接收NPC聊天消息
 //
 void YCTest::test_npctalk()
-{
+{/*
 	NET_TASK_MSG_NTF_T ntf;
 	const char* testMsg = "[start]\r\n\
 		talk =\"<?xml version='1.0' encoding='GB2312'?><p><t>茅山道长：</t><t>\r\n\r\n</t><t color='ffff0000'>尘归尘，土归土！当死神降临的时候，谁都无法抗拒！</t></p>\"\r\n\
@@ -53,6 +53,7 @@ void YCTest::test_npctalk()
 	{
 		throw YCException(102, "YCTest::test_npctalk测试失败");
 	}
+    */
 }
 
 //

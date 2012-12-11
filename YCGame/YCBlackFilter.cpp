@@ -4,7 +4,7 @@
 
 #include "YCBasic\YCDList.h"
 
-#include "YCNetwork/YCPkg_0080_Chat.h"
+#include "YCNetwork\protocol\YCPkg_0080_Chat.h"
 
 YCBlackFilter::YCBlackFilter(const YCDList* blacklist, YCIChatFilter* next)
 	: YCIChatFilter(BLACK_FILTER_ID, next)
@@ -24,6 +24,7 @@ YCBlackFilter::~YCBlackFilter(void)
 bool YCBlackFilter::selfValidate(const NET_CHAT_MSG_NTF_T* msg)
 {
 	// 发自自身
+    /*
 	if (msg->self == 1)
 	{
 		return true;
@@ -39,6 +40,6 @@ bool YCBlackFilter::selfValidate(const NET_CHAT_MSG_NTF_T* msg)
 			return false;
 		}
 	}
-
+    */
 	return true;
 }

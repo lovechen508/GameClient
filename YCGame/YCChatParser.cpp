@@ -5,7 +5,7 @@
 
 #include "YCBasic\YCAssert.h"
 
-#include "YCNetwork\YCPkg_0080_Chat.h"
+#include "YCNetwork\protocol\YCPkg_0080_Chat.h"
 
 //
 // º¯Êý£ºbuild(const YCChatMessage* msg)

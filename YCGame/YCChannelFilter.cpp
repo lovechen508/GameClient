@@ -2,7 +2,7 @@
 
 #include "YCChatMsgDefine.h"
 
-#include "YCNetwork/YCPkg_0080_Chat.h"
+#include "YCNetwork\protocol\YCPkg_0080_Chat.h"
 
 YCChannelFilter::YCChannelFilter(const int* validChannels, YCIChatFilter* next)
 	: YCIChatFilter(CH_FILTER_ID, next)
@@ -20,7 +20,7 @@ YCChannelFilter::~YCChannelFilter(void)
 // 目的：自身校验消息是否合法
 //
 bool YCChannelFilter::selfValidate(const NET_CHAT_MSG_NTF_T* msg)
-{
+{/*
 	// 发自自身
 	if (msg->self == 1)
 	{
@@ -34,4 +34,6 @@ bool YCChannelFilter::selfValidate(const NET_CHAT_MSG_NTF_T* msg)
 	}
 
 	return ((msg->type & *myRefValidChannels) != 0);
+*/
+    return true;
 }
