@@ -10,42 +10,42 @@
   </response>
 
   <!-- 创建角色 -->
-  <request id="0012" msg="">
+  <request id="0012" msg="AA">
     
   </request>
-  <response id="0013" msg="">
+  <response id="0013" msg="BB">
     
   </response>
 
   <!-- 选择角色 -->
-  <request id="0014" msg="">
+  <request id="0014" msg="CC">
 
   </request>
-  <response id="0015" msg="">
+  <response id="0015" msg="DD">
 
   </response>
   
   <!-- 删除角色 -->
-  <request id="0016" msg="">
+  <request id="0016" msg="EE">
 
   </request>
-  <response id="0017" msg="">
+  <response id="0017" msg="FF">
 
   </response>
   
   <!-- 恢复角色 -->
-  <request id="0018" msg="">
+  <request id="0018" msg="GG">
 
   </request>
-  <response id="0019" msg="">
+  <response id="0019" msg="HH">
 
   </response>
 
   <!-- 永久删除角色 -->
-  <request id="0020" msg="">
+  <request id="0020" msg="II">
 
   </request>
-  <response id="0021" msg="">
+  <response id="0021" msg="JJ">
 
   </response>
   

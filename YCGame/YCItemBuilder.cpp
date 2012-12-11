@@ -4,7 +4,6 @@
 
 #include "YCBasic\YCDef.h"
 
-#include "YCNetwork\YCIPackageResponse.h"
 
 YCItem* YCItemBuilder::build(YCIPackageResponse* response)
 {

@@ -3,6 +3,7 @@
 
 #define HOST_NAME 100
 
+#include "YCType2Int.h"
 #include "YCMSGDefine.h"
 #include "YCDecodeHelper.h"
 
@@ -68,7 +69,7 @@ public:
 	// 目的：泛型绑定
 	//
 	template<typename T, typename P>
-	bool bind(T* host, unsigned short msgId, P&)
+	bool bind(T* host, P&)
 	{
 		if (host == NULL)
 		{
@@ -80,7 +81,8 @@ public:
 			return false;
 		}
 
-		if (myCallbacks[msgId] != NULL)
+        int msgId = YCType2Int<P>::id;
+		if (msgId == -1 || myCallbacks[msgId] != NULL)
 		{
 			return false;
 		}
@@ -110,20 +112,41 @@ public:
 	// 目的：绑定加解密算法,返回旧算法
 	//
 	YCIStreamEncryption* bindEncryption(YCIStreamEncryption* encryption);
-
+    
 	//
-	// 函数：get(YCIPackageRequest* request)
-	//
-	// 目的：向服务器提交请求，阻塞函数
-	//
-	//YCIPackageResponse* get(YCIPackageRequest* request);
-
-	//
-	// 函数：post(unsigned short msgId, YCIPackageRequest* request)
+	// 函数：template<typename T> void post(T* request)
 	//
 	// 目的：向服务器提交请求，异步消息
 	//
-	void post(unsigned short msgId, YCIPackageRequest* request);
+    template<typename T>
+	void post(T* request)
+    {
+        if (myConnection == NULL)
+        {
+            throw YCException(2002, "YCNetwork::post网络连接尚未建立");
+        }
+
+        if (request == NULL)
+        {
+            throw YCException(2002, "YCNetwork::post提交NULL网络消息");
+        }
+
+        int msgId = YCType2Int<T>::id;
+        if (msgId == -1 || myEncoders[msgId] == NULL)
+        {
+            throw YCException(2002, "YCNetwork::post未注册封包函数", msgId);
+        }
+
+        char buf[BUFFER_SIZE];
+        unsigned int len = BUFFER_SIZE;
+        YCDataHolder holder(buf, len);
+        if (myEncoders[msgId](request, &holder))
+        {
+            throw YCException(2002, "YCNetwork::post封包函数处理失败", msgId);
+        }
+
+        do_post(buf, len);
+    }
 
 	//
 	// 函数：close()
@@ -137,7 +160,7 @@ public:
 	//
 	// 目的：注册解包，封包函数对
 	//
-	void registry_encode(unsigned int msgId, ENCODE encode, DECODE decode);
+	void registry(unsigned int msgId, ENCODE encode, DECODE decode);
 
 	//
 	// 函数：finalize()
@@ -145,6 +168,13 @@ public:
 	// 目的：释放网络连接
 	//
 	void finalize();
+
+private:
+
+    //
+    // 函数：post 函数实现
+    //
+    void do_post(char* buf, unsigned int len);
 
 private:
 

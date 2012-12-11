@@ -3,7 +3,7 @@
 
 #include "YCGame\YCTaskParser.h"
 #include "YCGame\YCTaskMessage.h"
-#include "YCNetwork\YCPkg_0081_Npc.h"
+#include "YCNetwork\YCPkg_0090_Npc.h"
 
 #include "YCBasic\YCFileUtil.h"
 #include "YCBasic\YCException.h"

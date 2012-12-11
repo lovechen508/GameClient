@@ -1,8 +1,6 @@
 #include "YCLink.h"
 
 #include "YCNetwork.h"
-#include "YCIPackageRequest.h"
-#include "YCIPackageResponse.h"
 #include "YCIPHelper.h"
 
 #include "YCBasic\YCDef.h"

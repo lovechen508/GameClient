@@ -3,8 +3,6 @@
 #include <map>
 
 #include "YCLink.h"
-#include "YCIPackageRequest.h"
-#include "YCIPackageResponse.h"
 
 #include "YCInput\YCInput.h"
 
@@ -14,30 +12,15 @@
 #include "YCConfig\YCConfig.h"
 #include "YCBasic\YCIStreamEncryption.h"
 
-#pragma region testCode
-
-// 测试代码
-struct TEST_PKG : public YCIPackageResponse
-{
-	int id;
-	char buf[10];
-};
-
-class TestHandler
-{
-public:
-
-	void handle(const TEST_PKG& pkg)
-	{
-
-	}
-};
-
-//测试代码
-//TestHandler gTestHandler;
-//myNetworker->bind(&gTestHandler, 1, TEST_PKG());
-
-#pragma endregion testCode
+#include "protocol\YCPkg_0001_Version.h"
+#include "protocol\YCPkg_0003_Error.h"
+#include "protocol\YCPkg_0005_Login.h"
+#include "protocol\YCPkg_0007_Logout.h"
+#include "protocol\YCPkg_0011_Role.h"
+#include "protocol\YCPkg_0022_Ping.h"
+#include "protocol\YCPkg_0080_Chat.h"
+#include "protocol\YCPkg_1000_EnterScene.h"
+#include "protocol\YCPkg_1002_LeaveScene.h"
 
 YCNetwork::YCNetwork()
 	: myConnection(NULL)
@@ -66,6 +49,16 @@ bool YCNetwork::initialize(HWND hWnd, YCInput* input, YCConfig& config)
 
 	// 处理config
 
+    // 注册网络解封包函数
+    YCPkg_0001_Version_init(this);
+    YCPkg_0003_Error_init(this);
+    YCPkg_0005_Login_init(this);
+    YCPkg_0007_Logout_init(this);
+    YCPkg_0011_Role_init(this);
+    YCPkg_0022_Ping_init(this);
+    YCPkg_0080_Chat_init(this);
+    YCPkg_1000_EnterScene_init(this);
+    YCPkg_1002_LeaveScene_init(this);
 
 	return true;
 }
@@ -166,57 +159,6 @@ YCIStreamEncryption* YCNetwork::bindEncryption(YCIStreamEncryption* encryption)
 }
 
 //
-// 函数：get(YCIPackageRequest* request)
-//
-// 目的：向服务器提交请求，阻塞函数
-//
-//YCIPackageResponse* YCNetwork::get(YCIPackageRequest* request)
-//{
-//	return NULL;
-//}
-
-//
-// 函数：post(unsigned short msgId, YCIPackageRequest* request)
-//
-// 目的：向服务器提交请求，异步消息
-//
-void YCNetwork::post(unsigned short msgId, YCIPackageRequest* request)
-{
-	if (myConnection == NULL)
-	{
-		throw YCException(2002, "YCNetwork::post网络连接尚未建立");
-	}
-
-	if (request == NULL)
-	{
-		throw YCException(2002, "YCNetwork::post提交NULL网络消息");
-	}
-
-	if (myEncoders[msgId] == NULL)
-	{
-		throw YCException(2002, "YCNetwork::post未注册封包函数", msgId);
-	}
-
-	char buf[BUFFER_SIZE];
-	unsigned int len = BUFFER_SIZE;
-	YCDataHolder holder(buf, len);
-	if (myEncoders[msgId](request, &holder))
-	{
-		throw YCException(2002, "YCNetwork::post封包函数处理失败", msgId);
-	}
-
-	if (myEncrypt != NULL)
-	{
-		if (!myEncrypt->encode(buf, len, buf, len))
-		{
-			throw YCException(2002, "YCPackageHandlerImpl::encode封包加密失败！");;
-		}
-	}
-
-	myConnection->post(buf, len);
-}
-
-//
 // 函数：registry(unsigned int msgId, ENCODE encode, DECODE decode)
 //
 // 目的：注册解包，封包函数对
@@ -285,4 +227,24 @@ void YCNetwork::finalize()
 	{
 		SAFE_DELETE(myCallbacks[i]);
 	}
+}
+
+////////////////////////////////////////////////////////////////////////
+// Private Part
+////////////////////////////////////////////////////////////////////////
+//
+// 函数：post 函数实现
+//
+void YCNetwork::do_post(char* buf, unsigned int len)
+{
+
+    if (myEncrypt != NULL)
+    {
+        if (!myEncrypt->encode(buf, len, buf, len))
+        {
+            throw YCException(2002, "YCPackageHandlerImpl::encode封包加密失败！");;
+        }
+    }
+
+    myConnection->post(buf, len);
 }

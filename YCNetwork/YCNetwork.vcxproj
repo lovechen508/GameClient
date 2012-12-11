@@ -95,8 +95,14 @@
 rem copy YC*.h ..\..\Distribute\debug\include\YCNetwork
 rem copy ..\debug\YC_Network.lib ..\..\Distribute\debug\lib
 rem copy ..\debug\YC_Network.dll ..\..\Distribute\debug\bin
+
 </Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>rem 生成网络协议h, cpp文件
+
+..\3rd\protocol_converter\1.0\bin\ProtocolConverter.exe xml protocol</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Distribute|Win32'">
     <ClCompile>
@@ -185,27 +191,42 @@ copy ..\bin\YC_Network.dll ..\..\Distribute\release\bin</Command>
     <None Include="xml\YCPkg_1012_Move.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="protocol\YCPkg_0001_Version.cpp" />
+    <ClCompile Include="protocol\YCPkg_0003_Error.cpp" />
+    <ClCompile Include="protocol\YCPkg_0005_Login.cpp" />
+    <ClCompile Include="protocol\YCPkg_0007_Logout.cpp" />
+    <ClCompile Include="protocol\YCPkg_0011_Role.cpp" />
+    <ClCompile Include="protocol\YCPkg_0022_Ping.cpp" />
+    <ClCompile Include="protocol\YCPkg_0080_Chat.cpp" />
+    <ClCompile Include="protocol\YCPkg_0090_Npc.cpp" />
+    <ClCompile Include="protocol\YCPkg_1000_EnterScene.cpp" />
+    <ClCompile Include="protocol\YCPkg_1002_LeaveScene.cpp" />
     <ClCompile Include="YCDataHolder.cpp" />
     <ClCompile Include="YCHttpClient.cpp" />
     <ClCompile Include="YCLink.cpp" />
     <ClCompile Include="YCNetwork.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="protocol\YCPkg_0001_Version.h" />
+    <ClInclude Include="protocol\YCPkg_0003_Error.h" />
+    <ClInclude Include="protocol\YCPkg_0005_Login.h" />
+    <ClInclude Include="protocol\YCPkg_0007_Logout.h" />
+    <ClInclude Include="protocol\YCPkg_0011_Role.h" />
+    <ClInclude Include="protocol\YCPkg_0022_Ping.h" />
+    <ClInclude Include="protocol\YCPkg_0080_Chat.h" />
+    <ClInclude Include="protocol\YCPkg_0090_Npc.h" />
+    <ClInclude Include="protocol\YCPkg_1000_EnterScene.h" />
+    <ClInclude Include="protocol\YCPkg_1002_LeaveScene.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="YCDataHolder.h" />
     <ClInclude Include="YCHttpClient.h" />
-    <ClInclude Include="YCIPackageRequest.h" />
-    <ClInclude Include="YCIPackageResponse.h" />
     <ClInclude Include="YCLink.h" />
     <ClInclude Include="YCMSGDefine.h" />
     <ClInclude Include="YCNetwork.h" />
     <ClInclude Include="YCINetworkCallback.h" />
     <ClInclude Include="YCDecodeHelper.h" />
     <ClInclude Include="YCIPHelper.h" />
-    <ClInclude Include="YCPkg_0005_Login.h" />
-    <ClInclude Include="YCPkg_0080_Chat.h" />
-    <ClInclude Include="YCPkg_0081_Npc.h" />
-    <ClInclude Include="YCPkg_1000_EnterScene.h" />
+    <ClInclude Include="YCType2Int.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="YC_Network.rc" />

@@ -79,3 +79,18 @@
 																						}
 																						
 																						#endif
+																						
+																						
+==== ÀàÐÍÓ³Éä ====
+
+char							=>							
+short							=>
+int								=>
+
+unsigned char					=>
+unsigned short					=>
+unsigned int					=>
+unsigned long					=>
+unsigned long long				=>
+
+string							=>

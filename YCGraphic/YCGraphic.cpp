@@ -982,8 +982,8 @@ void YCGraphic::registerMapFactory(YCIMapFactory* mapFactory)
 	YCSceneManager::GetSingleton().registerMapFactory(mapFactory);	
 
 	// TEST CODE
-	YCIPackageResponse response;	
-	updateScene(YCSceneManager::GetSingleton().requireScene(&response));
+	//YCIPackageResponse response;	
+	//updateScene(YCSceneManager::GetSingleton().requireScene(&response));
 }
 
 //

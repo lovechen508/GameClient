@@ -169,10 +169,13 @@ YCXmlReader& YCXmlReader::value(char** val, const char* defaultValue)
 	catch (YCException &e)
 	{
 		UNREFERENCED_PARAMETER(e);
-		int length = strlen(defaultValue);
-		*val = new char[length+1];
-		strncpy(*val, defaultValue, length);
-		(*val)[length] = '\0';
+        if (defaultValue != NULL)
+        {
+		    int length = strlen(defaultValue);
+		    *val = new char[length+1];
+		    strncpy(*val, defaultValue, length);
+		    (*val)[length] = '\0';
+        }
 	}
 	return *this;
 }
@@ -271,11 +274,14 @@ YCXmlReader& YCXmlReader::attr(const char *name, char** val)
     }
 
 	const char* tmp = e->Attribute(name);
-	int length = strlen(tmp);
-	*val = new char[length+1];
-	strncpy(*val, tmp, length);
-	(*val)[length] = '\0';
-	
+    if (tmp != NULL)
+    {
+	    int length = strlen(tmp);
+	    *val = new char[length+1];
+	    strncpy(*val, tmp, length);
+	    (*val)[length] = '\0';
+    }
+
 	return *this;
 }
 
@@ -293,10 +299,13 @@ YCXmlReader& YCXmlReader::attr(const char *name, char** val, const char* default
 	catch (YCException& e)
 	{
 		UNREFERENCED_PARAMETER(e);
-		int length = strlen(defaultValue);
-		*val = new char[length+1];
-		strncpy(*val, defaultValue, length);
-		(*val)[length] = '\0';
+        if (defaultValue != NULL)
+		{
+            int length = strlen(defaultValue);
+		    *val = new char[length+1];
+		    strncpy(*val, defaultValue, length);
+		    (*val)[length] = '\0';
+        }
 	}
 	return *this;
 }

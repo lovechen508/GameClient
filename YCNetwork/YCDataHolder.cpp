@@ -57,6 +57,11 @@ int YCDataHolder::length()
 	return myLen;
 }
 
+int YCDataHolder::getPosition()
+{
+    return myPos;
+}
+
 int YCDataHolder::addByte(unsigned char byByte)
 {
 	if (myPos + (int)sizeof(byByte) > myLen)
@@ -69,13 +74,13 @@ int YCDataHolder::addByte(unsigned char byByte)
 	return myPos;
 }
 
-int YCDataHolder::delByte(unsigned char* byByte)
+int YCDataHolder::delByte(unsigned char& byByte)
 {
 	if (myPos + (int)sizeof(unsigned char) > myLen)
 	{
 		return -1;
 	}
-	*byByte = *(unsigned char*)(myBuf+myPos);
+	byByte = *(unsigned char*)(myBuf+myPos);
 	myPos += sizeof(byByte);
 	return myPos;
 }
@@ -92,13 +97,13 @@ int YCDataHolder::addChar(char chChar)
 	return myPos;
 }
 
-int YCDataHolder::delChar(char *chChar)
+int YCDataHolder::delChar(char& chChar)
 {
 	if (myPos + (int)sizeof(char) > myLen)
 	{
 		return -1;
 	}
-	*chChar = *(char*)(myBuf+myPos);
+	chChar = *(char*)(myBuf+myPos);
 	myPos += sizeof(char);
 	return myPos;
 }
@@ -115,14 +120,14 @@ int YCDataHolder::addWord(unsigned short wWord)
 	return myPos;
 }
 
-int YCDataHolder::delWord(unsigned short *wWord)
+int YCDataHolder::delWord(unsigned short& wWord)
 {
 	if (myPos + (int)sizeof(unsigned short) > myLen)
 	{
 		return -1;
 	}
 
-	*wWord = ntohs(*(unsigned short*)(myBuf+myPos));
+	wWord = ntohs(*(unsigned short*)(myBuf+myPos));
 	myPos += sizeof(unsigned short);
 	return myPos;
 }
@@ -139,14 +144,14 @@ int YCDataHolder::addShort(short shShort)
 	return myPos;
 }
 
-int YCDataHolder::delShort(short *shShort)
+int YCDataHolder::delShort(short& shShort)
 {
 	if (myPos + (int)sizeof(short) > myLen)
 	{
 		return -1;
 	}
 
-	*shShort = ntohs(*(short*)(myBuf+myPos));
+	shShort = ntohs(*(short*)(myBuf+myPos));
 	myPos += sizeof(short);
 	return myPos;    
 }
@@ -162,14 +167,14 @@ int YCDataHolder::addDword(unsigned int dwWord)
 	return myPos;
 }
 
-int YCDataHolder::delDword(unsigned int *dwWord)
+int YCDataHolder::delDword(unsigned int& dwWord)
 {
 	if (myPos + (int)sizeof(unsigned int) > myLen)
 	{
 		return -1;
 	}
 
-	*dwWord = ntohl(*(unsigned int*)(myBuf+myPos));
+	dwWord = ntohl(*(unsigned int*)(myBuf+myPos));
 	myPos += sizeof(unsigned int);
 	return myPos;
 }
@@ -186,14 +191,14 @@ int YCDataHolder::addInt(int iInt)
 	return myPos; 
 }
 
-int YCDataHolder::delInt(int *iInt)
+int YCDataHolder::delInt(int& iInt)
 {
 	if (myPos + (int)sizeof(int) > myLen)
 	{
 		return -1;
 	}
 
-	*iInt = *(int*)(myBuf+myPos);
+	iInt = *(int*)(myBuf+myPos);
 	myPos += sizeof(int);
 	return myPos;
 }
@@ -210,14 +215,14 @@ int YCDataHolder::addUint64(unsigned long long qwUint64)
 	return myPos;
 }
 
-int YCDataHolder::delUint64(unsigned long long *qwUint64)
+int YCDataHolder::delUint64(unsigned long long& qwUint64)
 {
 	if (myPos + (int)sizeof(unsigned long long) > myLen)
 	{
 		return -1;
 	}
 
-	*qwUint64 = ntohll(*(unsigned long long*)(myBuf+myPos));
+	qwUint64 = ntohll(*(unsigned long long*)(myBuf+myPos));
 	myPos += sizeof(unsigned long long);
 	return myPos;
 }
@@ -234,14 +239,14 @@ int YCDataHolder::addInt64(long long llInt64)
 	return myPos;
 }
 
-int YCDataHolder::delInt64(long long *llInt64)
+int YCDataHolder::delInt64(long long& llInt64)
 {
 	if (myPos + (int)sizeof(long long) > myLen)
 	{
 		return -1;
 	}
 
-	*llInt64 = ntohll(*(long long*)(myBuf+myPos));
+	llInt64 = ntohll(*(long long*)(myBuf+myPos));
 	myPos += sizeof(llInt64);
 	return myPos;
 }
@@ -268,7 +273,7 @@ int YCDataHolder::addString(const char*pszString, int length)
 int YCDataHolder::delString(char* pszOut, int bufSize)
 {
 	unsigned short wLen = 0;
-	if (-1 == delWord(&wLen))
+	if (-1 == delWord(wLen))
 	{
 		return -1;
 	}

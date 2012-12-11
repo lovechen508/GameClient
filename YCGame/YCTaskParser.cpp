@@ -19,7 +19,7 @@
 #include "YCBasic\YCScopeGuard.h"
 #include "YCBasic\YCStringHelper.h"
 
-#include "YCNetwork\YCPkg_0081_Npc.h"
+#include "YCNetwork\protocol\YCPkg_0090_Npc.h"
 
 /*
 	msg = """
@@ -493,7 +493,7 @@ private:
 // 目的：从网络数据包构建内建消息单元
 //
 YCTaskMessage* YCTaskParser::parse(const NET_TASK_MSG_NTF_T* msg)
-{
+{/*
 	SMART_ASSERT(msg != NULL);
 
 	if (msg == NULL)
@@ -572,4 +572,6 @@ YCTaskMessage* YCTaskParser::parse(const NET_TASK_MSG_NTF_T* msg)
 	SCOPE_GIVEUP(result_guard);
 
 	return result;
+*/
+    return NULL;
 }

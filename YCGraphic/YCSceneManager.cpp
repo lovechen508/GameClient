@@ -7,7 +7,6 @@
 #include "YCBasic\YCDef.h"
 #include "YCBasic\YCAssert.h"
 #include "YCNetwork\YCMSGDefine.h"
-#include "YCNetwork\YCIPackageResponse.h"
 
 YCSceneManager::YCSceneManager(YCGraphic* graphic)
 	: myGraphic(graphic)

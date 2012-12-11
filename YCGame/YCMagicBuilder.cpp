@@ -4,9 +4,7 @@
 
 #include "YCBasic\YCDef.h"
 
-#include "YCNetwork\YCIPackageResponse.h"
-
-YCMagic* YCMagicBuilder::build(YCIPackageResponse* response)
+YCMagic* YCMagicBuilder::build(void* response)
 {
 	// TODO ...
 

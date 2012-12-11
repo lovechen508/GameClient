@@ -81,14 +81,38 @@
     <ClCompile Include="YCDataHolder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="protocol\YCPkg_1002_LeaveScene.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0001_Version.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0003_Error.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0005_Login.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0007_Logout.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0011_Role.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0022_Ping.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0080_Chat.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_0090_Npc.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\YCPkg_1000_EnterScene.cpp">
+      <Filter>源文件\Protocol</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="YCIPackageRequest.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="YCIPackageResponse.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="YCNetwork.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -116,16 +140,37 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="YCPkg_0005_Login.h">
+    <ClInclude Include="YCType2Int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\YCPkg_1002_LeaveScene.h">
       <Filter>头文件\Protocol</Filter>
     </ClInclude>
-    <ClInclude Include="YCPkg_0080_Chat.h">
+    <ClInclude Include="protocol\YCPkg_0001_Version.h">
       <Filter>头文件\Protocol</Filter>
     </ClInclude>
-    <ClInclude Include="YCPkg_0081_Npc.h">
+    <ClInclude Include="protocol\YCPkg_0003_Error.h">
       <Filter>头文件\Protocol</Filter>
     </ClInclude>
-    <ClInclude Include="YCPkg_1000_EnterScene.h">
+    <ClInclude Include="protocol\YCPkg_0005_Login.h">
+      <Filter>头文件\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\YCPkg_0007_Logout.h">
+      <Filter>头文件\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\YCPkg_0011_Role.h">
+      <Filter>头文件\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\YCPkg_0022_Ping.h">
+      <Filter>头文件\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\YCPkg_0080_Chat.h">
+      <Filter>头文件\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\YCPkg_0090_Npc.h">
+      <Filter>头文件\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol\YCPkg_1000_EnterScene.h">
       <Filter>头文件\Protocol</Filter>
     </ClInclude>
   </ItemGroup>

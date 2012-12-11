@@ -2,7 +2,6 @@
 #define _INCLUDE_YCMAGICBUILDER_H_
 
 class YCMagic;
-struct YCIPackageResponse;
 
 /*
  * YCMagicBuilder : 技能构建辅助类
@@ -10,11 +9,11 @@ struct YCIPackageResponse;
 struct YCMagicBuilder
 {
 	//
-	// 函数：build(YCIPackageResponse* response)
+	// 函数：build(void* response)
 	//
 	// 目的：从服务器返回构建技能
 	//
-	static YCMagic* build(YCIPackageResponse* response);
+	static YCMagic* build(void* response);
 };
 
 #endif

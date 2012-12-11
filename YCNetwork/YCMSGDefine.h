@@ -3,9 +3,6 @@
 
 #include "YCDataHolder.h"
 
-#include "YCIPackageRequest.h"
-#include "YCIPackageResponse.h"
-
 #define MAX_PROTOCOL 8192
 
 //
@@ -13,7 +10,7 @@
 //
 #define BUFFER_SIZE 10240
 
-typedef bool (*ENCODE)(YCIPackageRequest*, YCDataHolder*);
-typedef bool (*DECODE)(YCIPackageResponse*, YCDataHolder*);
+typedef int (*ENCODE)(void*, YCDataHolder*);
+typedef int (*DECODE)(void*, YCDataHolder*);
 
 #endif

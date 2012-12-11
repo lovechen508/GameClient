@@ -10,7 +10,7 @@
 	<define name="ROLE_NAME_LEN" value="64" />
   </defines>
 
-  <internel>
+  <internal>
     <!-- 玩家基本信息 -->
     <type name="ROLE_BASIC_INFO">
       <item name="roleName" type="string" count="ROLE_NAME_LEN" />
@@ -28,7 +28,7 @@
 	  <item name="hairType" type="unsigned char" />
 	  <item name="helmId" type="unsigned short" />
     </type>
-  </internel>
+  </internal>
   
   <!-- 主玩家信息 -->
   <response id="1004" msg="GSPKG_ROLEMAINDATA_NTF">
@@ -46,6 +46,7 @@
   <!-- 其他玩家出现 -->
   <response id="1006" msg="GSPKG_ROLEAPPEAR_NTF">
     <item name="basic" type="ROLE_BASIC_INFO" />
+	<item name="addition" type="ROLE_ADDITION_INFO" />
   </response>
   
   <response id="1007" msg="GSPKG_MONSTERAPPEAR_NTF">
