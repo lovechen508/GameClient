@@ -105,7 +105,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalDependencies>..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;..\3rd\zlib\1.2.7\lib\debug\zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>imm32.lib;..\3rd\gperftools\2.0\libtcmalloc_minimal-debug.lib;..\3rd\zlib\1.2.7\lib\debug\zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>
@@ -200,6 +200,9 @@ copy ..\bin\YC_Basic.dll ..\..\Distribute\release\bin</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="YCImeCtrl.cpp" />
+    <ClCompile Include="YCImeSwitcher.cpp" />
+    <ClCompile Include="YCMD5.cpp" />
     <ClCompile Include="YCAssert.cpp" />
     <ClCompile Include="YCBFEncryption.cpp" />
     <ClCompile Include="YCCondition.cpp" />
@@ -224,7 +227,6 @@ copy ..\bin\YC_Basic.dll ..\..\Distribute\release\bin</Command>
     <ClCompile Include="YCITimer.cpp" />
     <ClCompile Include="YCLock.cpp" />
     <ClCompile Include="YCLockGuard.cpp" />
-    <ClCompile Include="YCMD5.cpp" />
     <ClCompile Include="YCPackException.cpp" />
     <ClCompile Include="YCPathWalker.cpp" />
     <ClCompile Include="YCQueue.cpp" />
@@ -239,6 +241,9 @@ copy ..\bin\YC_Basic.dll ..\..\Distribute\release\bin</Command>
     <ClCompile Include="YCZlibFile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="YCImeCtrl.h" />
+    <ClInclude Include="YCImeSwitcher.h" />
+    <ClInclude Include="YCMD5.h" />
     <ClInclude Include="YCAny.h" />
     <ClInclude Include="YCAssert.h" />
     <ClInclude Include="YCBFEncryption.h" />
@@ -273,7 +278,6 @@ copy ..\bin\YC_Basic.dll ..\..\Distribute\release\bin</Command>
     <ClInclude Include="YCLock.h" />
     <ClInclude Include="YCLockGuard.h" />
     <ClInclude Include="YCLogger.h" />
-    <ClInclude Include="YCMD5.h" />
     <ClInclude Include="YCPackException.h" />
     <ClInclude Include="YCPathWalker.h" />
     <ClInclude Include="YCQueue.h" />

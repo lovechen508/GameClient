@@ -1,5 +1,13 @@
 #include "YCBFEncryption.h"
 
+#include <fstream>
+#include <sstream>
+#include <iostream>
+
+#include "YCDef.h"
+#include "YCAssert.h"
+#include "YCFileUtil.h"
+
 #pragma region sboxs
 
 #pragma once
@@ -347,7 +355,55 @@ YCBFEncryption::~YCBFEncryption(void)
 //
 bool YCBFEncryption::encode(const char *inFile, const char *outFile)
 {
-	return true;
+	bool result = false;
+	if (inFile == NULL || outFile == NULL)
+	{
+		return result;
+	}
+
+	if (!YCFileUtil::IsFileExist(inFile))
+	{
+		return result;
+	}
+
+	int size = YCFileUtil::GetFileSize(inFile);
+	if (size > 0)
+	{
+		std::cout << inFile << " size : " << size << std::endl;
+
+		std::fstream file;
+		file.open(inFile, std::ios::in|std::ios::binary);
+		if (file.is_open())
+		{
+			std::stringstream contents;
+			contents << file.rdbuf();			
+			file.close();
+
+			const std::string& plain = contents.str();
+
+			std::cout << "content : " << std::endl << plain << std::endl;
+
+			unsigned int length = size + size*0.2;
+			char* cipher = new char[length];
+			if (encode(plain.c_str(), plain.length(), cipher, length))
+			{
+				std::fstream o;
+				o.open(outFile, std::ios::out|std::ios::binary);
+				if (o.is_open())
+				{
+					std::string out(cipher, length);
+					o << out;
+					o.flush();
+				}
+				o.close();
+				result = true;
+			}
+
+			SAFE_DELETE_ARRAY(cipher);
+		}		
+	}
+
+	return result;
 }
 
 //
@@ -357,7 +413,49 @@ bool YCBFEncryption::encode(const char *inFile, const char *outFile)
 //
 bool YCBFEncryption::decode(const char *inFile, const char *outFile)
 {
-	return true;
+	bool result = false;
+	if (inFile == NULL || outFile == NULL)
+	{
+		return result;
+	}
+
+	if (!YCFileUtil::IsFileExist(inFile))
+	{
+		return result;
+	}
+
+	int size = YCFileUtil::GetFileSize(inFile);
+	if (size > 0)
+	{
+		std::fstream file;
+		file.open(inFile, std::ios::in|std::ios::binary);
+		if (file.is_open())
+		{
+			std::stringstream contents;
+			contents << file.rdbuf();			
+			file.close();
+
+			const std::string& cipher = contents.str();
+			unsigned int length = size+size*0.2;
+			char* plain = new char[length];
+			if (decode(cipher.c_str(), cipher.length(), plain, length))
+			{
+				std::fstream o;
+				o.open(outFile, std::ios::out|std::ios::binary);
+				if (o.is_open())
+				{
+					o << std::string(plain, length);
+					o.flush();
+				}
+				o.close();
+				result = true;
+			}
+
+			SAFE_DELETE_ARRAY(plain);
+		}		
+	}
+
+	return result;
 }
 
 //

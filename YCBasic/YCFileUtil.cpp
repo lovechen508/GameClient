@@ -54,6 +54,27 @@ bool YCFileUtil::IsFileExist(const char* filename)
 }
 
 //
+// 取得文件长度
+//
+int YCFileUtil::GetFileSize(const char* filename)
+{
+	SMART_ASSERT(filename != NULL);
+	
+	int size = -1;
+
+	FILE* fd = fopen(filename, "r");
+	if (fd != NULL)
+	{
+		fseek(fd, 0L, SEEK_END);
+		size = ftell(fd);
+		//fseek(fd, 0L, SEEK_SET);
+		fclose(fd);
+	}
+
+	return size;
+}
+
+//
 // 函数：IsDir(const char* dirname)
 //
 // 目的：判断指定路径下的文件是否存在及是否是Dir

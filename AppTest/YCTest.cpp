@@ -5,6 +5,7 @@
 #include "YCGame\YCTaskMessage.h"
 #include "YCNetwork\protocol\YCPkg_0090_Npc.h"
 
+#include "YCBasic\YCMd5.h"
 #include "YCBasic\YCFileUtil.h"
 #include "YCBasic\YCException.h"
 #include "YCBasic\YCScopeGuard.h"
@@ -16,12 +17,31 @@
 
 void YCTest::test()
 {
-	test_npctalk();
+	//test_md5();
+	test_encrypt_file();
+	//test_npctalk();
 	//test_forward();
 	//test_packfile();
 	//test_encrypt();
 	//test_compress();
 	//test_compress2();
+}
+
+//
+// 测试MD5计算
+//
+void YCTest::test_md5()
+{
+	const char* key = "ED0CBE1B3382F0FF";
+
+	YCMd5 md5;
+
+	std::string pwd("3852346538");
+	md5.GenerateMD5((unsigned char*)pwd.c_str(), pwd.length());
+	
+	std::string md5code = md5.ToString();
+
+	return;
 }
 
 //
@@ -153,6 +173,18 @@ void YCTest::test_encrypt()
 			throw YCException(902, "YCTest::test_encrypt 加解密不一致");
 		}
 	}
+}
+
+//
+// 加解密文件测试
+//
+void YCTest::test_encrypt_file()
+{
+	const char* pwd = "<ulstyle='padding:0;margin:10px;'><listyle='line-height:16px;padding-left:0;margin-left:10px;font-s";
+	YCBFEncryption bf(pwd);
+
+	bf.encode("c:\\encrypt\\license.lic", "c:\\encrypt\\license.cipher");
+	bf.decode("c:\\encrypt\\license.cipher", "c:\\encrypt\\license.plain");
 }
 
 //

@@ -189,9 +189,6 @@
     <ClCompile Include="YCZlibFile.cpp">
       <Filter>源文件\File</Filter>
     </ClCompile>
-    <ClCompile Include="YCMD5.cpp">
-      <Filter>源文件\Utility</Filter>
-    </ClCompile>
     <ClCompile Include="YCIPackFileBuilder.cpp">
       <Filter>源文件\File\Pack</Filter>
     </ClCompile>
@@ -206,6 +203,15 @@
     </ClCompile>
     <ClCompile Include="YCIFilePack.cpp">
       <Filter>源文件\File\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="YCMD5.cpp">
+      <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="YCImeCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="YCImeSwitcher.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -341,9 +347,6 @@
     <ClInclude Include="YCIAbstractFile.h">
       <Filter>头文件\File\Pack</Filter>
     </ClInclude>
-    <ClInclude Include="YCMD5.h">
-      <Filter>头文件\Utility</Filter>
-    </ClInclude>
     <ClInclude Include="YCDef.h">
       <Filter>头文件\Utility</Filter>
     </ClInclude>
@@ -367,6 +370,15 @@
     </ClInclude>
     <ClInclude Include="YCIFilePack.h">
       <Filter>头文件\File\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="YCMD5.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCImeCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="YCImeSwitcher.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

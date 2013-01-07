@@ -80,7 +80,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	UNREFERENCED_PARAMETER(lpCmdLine);
 
 #ifdef _DEBUG
-	//YCTest::test();
+	YCTest::test();
 #endif
 
 	// TODO: 在此放置代码。

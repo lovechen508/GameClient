@@ -35,6 +35,11 @@ public:
 	static bool IsFileExist(const char* filename);
 
 	//
+	// 取得文件长度
+	//
+	static int GetFileSize(const char* filename);
+
+	//
 	// 函数：IsDir(const char* dirname)
 	//
 	// 目的：判断指定路径下的文件是否存在及是否是Dir

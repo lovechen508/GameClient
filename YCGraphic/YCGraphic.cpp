@@ -241,7 +241,7 @@ public:
 	// 函数：begin()
 	//
 	// 目的：在draw之前调用
-	//tiaojian
+	//
 	virtual YCD3DSprite* begin(bool render)
 	{
 		memset(myTextureItems, 0, ItemsCount*sizeof(YCDrawItem_T));

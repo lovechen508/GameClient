@@ -10,6 +10,11 @@ public:
 private:
 
 	//
+	// 测试MD5计算
+	//
+	static void test_md5();
+
+	//
 	// 测试接收NPC聊天消息
 	//
 	static void test_npctalk();
@@ -27,6 +32,11 @@ private:
 	// 加解密测试
 	//
 	static void test_encrypt();
+
+	//
+	// 加解密文件测试
+	//
+	static void test_encrypt_file();
 
 	//
 	// 内部分配内存测试

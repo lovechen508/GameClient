@@ -14,6 +14,10 @@ struct NET_TASK_MSG_NTF_T;
 class YCAPI YCTaskManager : public YCIModel
 {
 
+    enum TASK_TYPE {
+
+    };
+
 public:
 
 	YCTaskManager(void);

@@ -1,41 +1,58 @@
 #ifndef _INCLUDE_YCMD5_H_
 #define _INCLUDE_YCMD5_H_
 
+#include <string>
+
+#define uint8 unsigned char
+#define uint32 unsigned long int
+
 /*
- * YCMD5 : MD5 Class. 
+ * FGPMd5 : 
  *
- * 说明：
  *
- *		YCMD5 md5;
- *		char final_string[16];
- *		md5.MD5Update(password.c_str(), password.Length());
- *		md5.MD5Final(final_string);
- *		return BCD_to_AnsiString(final_string,16);   //将MD5加密的验证码用16进制显示
- * 
  */
-class YCAPI YCMD5 
+class YCAPI YCMd5
 {
 public:
-	YCMD5();
-	virtual ~YCMD5();
-	void MD5Update ( unsigned char *input, unsigned int inputLen);
-	void MD5Final (unsigned char digest[16]);
+	//! construct a FGPMd5 from any buffer
+	void GenerateMD5(unsigned char* buffer,int bufferlen);
+
+	//! construct a FGPMd5
+	YCMd5();
+
+	//! construct a md5src from char *
+	YCMd5(const char * md5src);
+
+	//! construct a FGPMd5 from a 16 bytes md5
+	YCMd5(unsigned long* md5src);
+
+	//! add a other md5
+	YCMd5 operator +(YCMd5 adder);
+
+	//! just if equal
+	bool operator ==(YCMd5 cmper);
+
+	//! give the value from equer
+	// void operator =(FGPMd5 equer);
+
+	//! to a string
+	std::string ToString();
+
+	unsigned long m_data[4];
 
 private:
 
-	void MD5Init ();
-	void MD5Transform (unsigned long int state[4], unsigned char block[64]);
-	void MD5_memcpy (unsigned char* output, unsigned char* input,unsigned int len);
-	void Encode (unsigned char *output, unsigned long int *input,unsigned int len);
-	void Decode (unsigned long int *output, unsigned char *input, unsigned int len);
-	void MD5_memset (unsigned char* output,int value,unsigned int len);
+	struct md5_context
+	{
+		uint32 total[2];
+		uint32 state[4];
+		uint8 buffer[64];
+	};
 
-private:
-
-	unsigned long int state[4];     /* state (ABCD) */
-	unsigned long int count[2];     /* number of bits, modulo 2^64 (lsb first) */
-	unsigned char buffer[64];       /* input buffer */
-	unsigned char PADDING[64];		/* What? */
+	void md5_starts( struct md5_context *ctx );
+	void md5_process( struct md5_context *ctx, uint8 data[64] );
+	void md5_update( struct md5_context *ctx, uint8 *input, uint32 length );
+	void md5_finish( struct md5_context *ctx, uint8 digest[16] );
 };
 
 #endif

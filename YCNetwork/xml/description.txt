@@ -83,14 +83,14 @@
 																						
 ==== ÀàÐÍÓ³Éä ====
 
-char							=>							
-short							=>
-int								=>
+char							=>		addChar	/delChar							
+short							=>		addShort
+int								=>		addInt
+long long						=>		addInt64
 
-unsigned char					=>
-unsigned short					=>
-unsigned int					=>
-unsigned long					=>
-unsigned long long				=>
+unsigned char					=>		addByte
+unsigned short					=>		addWord
+unsigned int					=>		addDword
+unsigned long long				=>		addUint64
 
-string							=>
+string							=>		addString
