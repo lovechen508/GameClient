@@ -24,10 +24,14 @@ class YCXmlWriterImpl
 public:
 
 	YCXmlWriterImpl(const char* file)
-		: filename(file)
-		, doc(NULL)
+		: doc(NULL)
 		, pos(NULL)
 	{
+        if (file != NULL)
+        {
+            filename = file;
+        }
+        
 		doc = new tinyxml2::XMLDocument();
 		if (YCFileUtil::IsFileExist(filename.c_str()))
 		{

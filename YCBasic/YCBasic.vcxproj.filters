@@ -208,10 +208,10 @@
       <Filter>源文件\Utility</Filter>
     </ClCompile>
     <ClCompile Include="YCImeCtrl.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Utility</Filter>
     </ClCompile>
     <ClCompile Include="YCImeSwitcher.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Utility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -375,10 +375,13 @@
       <Filter>头文件\Utility</Filter>
     </ClInclude>
     <ClInclude Include="YCImeCtrl.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Utility</Filter>
     </ClInclude>
     <ClInclude Include="YCImeSwitcher.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="YCDBCache.h">
+      <Filter>头文件\Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

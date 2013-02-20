@@ -5,7 +5,10 @@
 #include "YCGame\YCTaskMessage.h"
 #include "YCNetwork\protocol\YCPkg_0090_Npc.h"
 
+#include "YCBasic\YCDef.h"
 #include "YCBasic\YCMd5.h"
+#include "YCBasic\YCRWLock.h"
+#include "YCBasic\YCDBCache.h"
 #include "YCBasic\YCFileUtil.h"
 #include "YCBasic\YCException.h"
 #include "YCBasic\YCScopeGuard.h"
@@ -18,13 +21,14 @@
 void YCTest::test()
 {
 	//test_md5();
-	test_encrypt_file();
+	//test_encrypt_file();
 	//test_npctalk();
 	//test_forward();
 	//test_packfile();
 	//test_encrypt();
 	//test_compress();
 	//test_compress2();
+    test_cache();
 }
 
 //
@@ -260,4 +264,38 @@ void YCTest::test_compress2()
 			throw YCException(902, "YCTest::test_compress加解压数据不一致");
 		}
 	}
+}
+
+class testKey
+{
+public:
+
+     testKey(int k) : key(k) {}
+
+    ~testKey() {}
+
+    int getKey() {return key;}
+
+    void setLastVisited() {};
+
+private:
+
+    int key;
+};
+
+//
+// 测试cache
+//
+void YCTest::test_cache()
+{
+    typedef FGCDBCache<int, testKey, YCRWLock> user_cache;
+
+    user_cache theCache;
+
+    theCache.initialize();
+
+    theCache.insert(1, new testKey(1));
+    theCache.insert(2, new testKey(2));
+
+    theCache.finalize();
 }

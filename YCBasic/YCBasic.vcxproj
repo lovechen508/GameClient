@@ -241,6 +241,7 @@ copy ..\bin\YC_Basic.dll ..\..\Distribute\release\bin</Command>
     <ClCompile Include="YCZlibFile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="YCDBCache.h" />
     <ClInclude Include="YCImeCtrl.h" />
     <ClInclude Include="YCImeSwitcher.h" />
     <ClInclude Include="YCMD5.h" />

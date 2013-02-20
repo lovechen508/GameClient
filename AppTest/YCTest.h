@@ -47,6 +47,11 @@ private:
 	// 外部分配内存测试
 	//
 	static void test_compress2();
+
+    //
+    // 测试cache
+    //
+    static void test_cache();
 };
 
 #endif
